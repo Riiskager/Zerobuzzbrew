@@ -1,0 +1,49 @@
+:root{
+    margin: 0;
+    padding: 0;
+    --groen: #616D38;
+    --lysgroen: #B79F39;
+    --roed: #C34C27;
+    --orange: #BC6C29;
+    --moerkblaa: #183A37;
+    --lysblaa: #2E776E;
+    --beige: #EFD6AC;
+
+--denlille: "serenity", sans-serif;
+--denstore: "noka", sans-serif;
+}
+
+
+    body{
+        background-color: var(--beige);
+    }
+    
+
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 450px; /* Justér efter behov */
+        background: linear-gradient(135deg, #FCE5CD 50%, #B79F39 50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .categories {
+        padding: 50px;
+        text-align: center;
+    }
+
+    
+    
+    
+    .categories li {
+        display: inline;
+        margin: 60px;
+        color: var(--orange)
+      
+      
+  
+    }
