@@ -13,6 +13,9 @@
 --denstore: "noka", sans-serif;
 }
 
+body{
+    background-color: var(--beige);
+}
 
 body, h1{
     font-family: var(--denstore);
@@ -22,5 +25,18 @@ body, p{
     font-family: var(--denlille);
     color: var(--lysblaa);
 }
+
+header{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 2px solid black;
+}
+header, video{
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+}
+
 
 
