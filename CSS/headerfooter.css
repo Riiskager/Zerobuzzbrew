@@ -20,36 +20,30 @@ footer{
     display: flex;
     justify-content: space-between;
     text-align: center;
-}
-
-.tekstfooter{
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 120px;
     padding-bottom: 80px;
 }
 
-footer a{
+.altekstfooter {
     display: block;
-    justify-content: center;
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-family: var(--denlille);
-    color: var(--lysblaa);
-    text-decoration: none;
-    padding: 10px;
+    margin-bottom: 10px;
 }
 
-footer a:hover{
+.footerlinktekst {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footerlinktekst:hover {
     text-decoration: underline;
-    cursor: pointer;
 }
 
 #logofooter{
     width: 250px;
     height: auto;
-    padding-top: 50px;
+    margin-top: -60px;
 }
 
 #logofooter:hover{
@@ -59,11 +53,13 @@ footer a:hover{
 #facebook{
     width: 40px;
     height: auto;
+    padding-right: 10px;
 }
 
 #instagram{
     width: 40px;
     height: auto;
+    padding-right: 10px;
 }
 
 #linkedin{
