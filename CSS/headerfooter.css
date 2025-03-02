@@ -16,8 +16,6 @@
 
 footer{
     background-color: var(--moerkblaa);
-    color: var(--lysblaa);
-    font-family: var(--denlille);
     font-size: 1.5vw;
     display: flex;
     justify-content: space-between;
@@ -31,10 +29,31 @@ footer{
     padding-bottom: 80px;
 }
 
+footer a{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: var(--denlille);
+    color: var(--lysblaa);
+    text-decoration: none;
+    padding: 10px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 #logofooter{
     width: 250px;
     height: auto;
     padding-top: 50px;
+}
+
+#logofooter:hover{
+    cursor: pointer;
 }
 
 #facebook{
@@ -48,6 +67,6 @@ footer{
 }
 
 #linkedin{
-    width: 48px;
+    width: 40px;
     height: auto;
 }
