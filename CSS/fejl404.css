@@ -1,0 +1,52 @@
+:root{
+    margin: 0;
+    padding: 0;
+    --groen: #616D38;
+    --lysgroen: #B79F39;
+    --roed: #C34C27;
+    --orange: #BC6C29;
+    --moerkblaa: #183A37;
+    --lysblaa: #2E776E;
+    --beige: #EFD6AC;
+    --hvid: #FCF2E5;
+
+--denlille: "serenity", sans-serif;
+--denstore: "noka", sans-serif;
+}
+
+body{
+    background-color: var(--hvid);
+    text-align: center;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-family: var(--denstore);
+    color: var(--roed);
+    font-size: 3vw;
+    text-align: center;
+}
+
+img{
+    width: 30vw;
+    height: auto;
+}
+
+a{
+    font-family: var(--denlille);
+    color: var(--groen);
+    font-size: 3vw;
+    text-decoration: none;
+    border: var(--groen) 4px solid;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+}
+
+a:hover{
+    background-color: var(--groen);
+    color: var(--hvid);
+}
+
