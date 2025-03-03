@@ -38,14 +38,17 @@ body, h1{
     color: var(--roed);
     padding-bottom: 20px;
 }
-body, p{
+#maanedens, p{
     font-family: var(--denlille);
     color: var(--roed);
     padding-bottom: 40px;
 }
 header{
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
 header, video{
     display: block;
     width: 100%;
@@ -105,13 +108,48 @@ header, video{
     margin-right: 10%;
 }
 
-.banner{
+.banner {
     background-color: var(--lysblaa);
     color: var(--hvid);
-    display: flex;
-    flex-wrap: nowrap;
     font-family: var(--denlille);
     font-size: xx-large;
-    padding: 40px 0;
+    padding: 20px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
 }
 
+.marquee {
+    display: flex;
+    gap: 100px; /* Spacing mellem elementerne */
+    animation: marquee 20s linear infinite;
+    width: max-content;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.udvalg{
+    background-color: var(--orange);
+}
+.udvalg h1{
+    padding: 50px;
+    color: var(--beige);
+    font-size: 50px;
+}
+
+.daaser{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px 50px 100px;
+}
+.daaser, p{
+    color: var(--beige);
+    font-size: 40px;
+}
