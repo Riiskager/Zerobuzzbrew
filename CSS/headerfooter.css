@@ -63,12 +63,10 @@ footer{
 .footerlinktekst {
     text-decoration: none;
     color: inherit;
-    transform: scaleX(0);
 }
 
 .footerlinktekst:hover {
     text-decoration: underline;
-    transform: scaleX(1);
 }
 
 #logofooter{
