@@ -21,32 +21,10 @@
 body {
     font-family: var(--denlille);
     text-align: center;
-    background: linear-gradient(165deg, #FCE5CD 50%, #B79F39 50%);
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    color: white;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.sprog img {
-    width: 20px;
-    height: auto;
+    position: relative;
+    width: 100vw;
+    height: 550px; /* Justér efter behov */
+    background: linear-gradient(165deg, #FCF2E5 50%, #C34C27 50%);
 }
 
 
@@ -233,6 +211,7 @@ nav ul li a {
     padding: 30px;
     margin: auto; /* Centrerer indholdet */
     background-color: var(--lysgroen);
+    margin-bottom: 70px;
 }
 
 .maanedens-oel h2 {
