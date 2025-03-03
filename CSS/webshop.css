@@ -183,25 +183,6 @@
 }
 
 
-/* ----Månedskasser SEKTION---- */
-.maanedens-kasser{
-    background-color: var(--lysblaa);
-    color: var(--beige);
-    font-size: 30px;
-    padding: 40px;
-}
-
-.maanedens-kasser p{
-    font-size: 25px;
-}
-
-.maaendens-container {
-    display: flex;
-    justify-content: center;
-    gap: 160px;
-    background-color: var(--lysblaa);
-    margin-top: 30px;
-}
 
 /* Pile-knapper */
 .arrow {
@@ -232,14 +213,13 @@
 }
 
 /*Slogan sektion*/
-    .slogan-section {
+    .slogan-section h2 {
         background-color: #E16F3D; /* En farve, der matcher designet */
         padding: 20px;
         text-align: center;
         font-size: 24px;
-        font-weight: bold;
         color: var(--hvid);
-        text-transform: uppercase;
+        font-family: var(--denstore);
      
     }
     
