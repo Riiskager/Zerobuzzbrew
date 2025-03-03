@@ -63,12 +63,10 @@ footer{
 .footerlinktekst {
     text-decoration: none;
     color: inherit;
-    transform: scaleX(0);
 }
 
 .footerlinktekst:hover {
     text-decoration: underline;
-    transform: scaleX(1);
 }
 
 #logofooter{
@@ -81,19 +79,38 @@ footer{
     cursor: pointer;
 }
 
-#facebook{
-    width: 40px;
-    height: auto;
+.fa-brands.fa-facebook{
+    color: var(--lysblaa);
     padding-right: 10px;
+    font-size: 2rem;
 }
 
-#instagram{
-    width: 40px;
-    height: auto;
+.fa-brands.fa-instagram{
+    color: var(--lysblaa);
     padding-right: 10px;
+    font-size: 2rem;
 }
 
-#linkedin{
-    width: 40px;
-    height: auto;
+.fa-brands.fa-linkedin{
+    color: var(--lysblaa);
+    padding-right: 10px;
+    font-size: 2rem;
+}
+
+.fa-brands.fa-tiktok{
+    color: var(--lysblaa);
+    padding-right: 10px;
+    font-size: 2rem;
+}
+
+.fa-brands.fa-youtube{
+    color: var(--lysblaa);
+    padding-right: 10px;
+    font-size: 2rem;
+}
+
+.fa-brands.fa-reddit{
+    color: var(--lysblaa);
+    padding-right: 10px;
+    font-size: 2rem;
 }

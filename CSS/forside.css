@@ -1,6 +1,10 @@
-:root{
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
     --groen: #616D38;
     --lysgroen: #B79F39;
     --roed: #C34C27;
@@ -12,6 +16,17 @@
 
 --denlille: "serenity", sans-serif;
 --denstore: "noka", sans-serif;
+}
+html{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+::-webkit-scrollbar{
+    display: none;
 }
 
 body{
@@ -26,18 +41,55 @@ body, p{
     font-family: var(--denlille);
     color: var(--lysblaa);
 }
-
 header{
-    margin: 0;
-    padding: 0;
     width: 100%;
     border: 2px solid black;
 }
 header, video{
-    margin-top: 0;
-    padding: 0;
     width: 100%;
 }
 
+#maanedens{
+    margin: 10px 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid var(--groen);
+    font-size: xx-large;
+}
+.købnu{
+    font-family: var(--denlille);
+    font-size: xx-large;
+    background-color: var(--roed);
+    color: var(--hvid);
+    border-radius: 15px;
+    padding: 10px;
+    border: 0px;
+}
+.købnu:active{
+    background-color: var(--roed);
+    border: 1px solid var(--orange);
+}
+.købnu:hover{
+    background-color: var(--orange);
+
+}
+.text{
+    display: flex;
+    justify-content: center;
+}
+#maanedens, h1{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+#maanedens, p{
+    display: flex;
+    justify-content: center;
+}
+
+#billede{
+    border: 5px solid var(--lysblaa);
+    min-width: 50%;
+}
 
 
