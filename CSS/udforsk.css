@@ -26,38 +26,70 @@ body {
 
 }
 
+/* ----BREADCRUMBS---- */
+.breadcrumbs {
+    font-size: 2vw;
+    font-family: var(--denlille);
+    color: var(--beige);
+    margin-top: 10px;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: var(--beige);
+    font-weight: 500;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs .active {
+    text-decoration: underline;
+}
+
+/* ----HERO SEKTION---- */
 .hero {
     position: relative;
     width: 100vw;
     height: 550px; /* Justér efter behov */
-    background: linear-gradient(165deg, #FCF2E5 50%, #C34C27 50%);
+    background: linear-gradient(-195deg, #FCF2E5 50%, #C34C27 50%);
 }
 
-
-/* ----CAROUSEL SEKTION---- */
 .nyheder{
-    color: var(--lysgroen);
-    margin-top: 50px;
+    color: var(--groen);
     font-size: 3vw;
-    margin-bottom: 30px;
     font-family: var(--denstore);
 }
 
+.linje{
+    border-top: 4px solid var(--groen);
+    width: 21%;
+    z-index: 1;
+    margin-left: 565px;
+    margin-top: 5px;
+}
+
+/* ----CAROUSEL STARTER---- */
 .carousel-container {
     margin-top: 50px;
     width: 100%;
+    height: auto;
     overflow: hidden;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .carousel-container p{
     font-size: 1.5vw;
     font-family: var(--denlille);
+    color: var(--beige);
 }
-
 
 .carousel {
     display: flex;
@@ -79,7 +111,6 @@ body {
     flex: 0 0 auto;
     width: 33.33%; /* Vist 3 billeder ad gangen */
     padding: 10px; /* Afstand mellem billeder */
-    box-sizing: border-box;
     scroll-snap-align: center;
     display: flex;
     flex-direction: column;
@@ -97,26 +128,31 @@ body {
     transition: transform 0.2s ease-in-out; /* Hurtigere overgang på billedzoom */
 }
 
-.carousel-item:hover img {
-    transform: scale(1.1); /* Zoomer billedet lidt mere ved hover */
-}
-
-
 .carousel-item:hover {
     transform: scale(1.05); /* Forstørrer artiklen lidt */
-  }
-
-.carousel-item:hover img {
-    transform: scale(1); /* Zoomer billedet lidt mere ved hover */
-  }
-   
-.image-name {
-    width: 80%; /* Juster størrelsen på PNG-billedet */
-    margin-top: 10px; /* Afstand mellem billede og tekst */
-    height: auto;
 }
 
-/* Pile-knapper */
+.carousel-item:hover img {
+    transform: scale(1);
+}
+
+/* PRIS SEKTION*/
+.pris {
+    display: inline-block; /* Sørger for, at border kan strækkes */
+    position: relative; /* Gør det muligt at placere en længere linje */
+}
+
+.pris::after {
+    content: ""; /* Opretter en pseudo-element til linjen */
+    position: absolute;
+    left: -25px;
+    bottom: -8px; /* Juster afstanden fra teksten */
+    width: 70px; /* Gør linjen længere */
+    height: 2px; /* Tykkelsen af linjen */
+    background-color: var(--beige)
+}
+   
+/* PILE SEKTION*/
 .arrow {
     position: absolute;
     top: 50%;
@@ -146,13 +182,22 @@ body {
 }
 
 
-/* ----Månedskasser SEKTION---- */
+/* ----MÅNEDENSKASSER SEKTION---- */
 .maanedens-kasser{
     background-color: var(--lysblaa);
     color: var(--beige);
     font-size: 3vw;
     padding: 40px;
     font-family: var(--denstore);
+    border-bottom: 4px solid var(--hvid);
+    border-top: 4px solid var(--hvid);
+}
+
+.linje1{
+    border-top: 4px solid var(--beige);
+    width: 93%;
+    z-index: 1;
+    margin-left: 50px;
 }
 
 .maanedens-kasser p{
@@ -213,11 +258,6 @@ body {
     transition: transform 0.2s ease-in-out; /* Hurtigere overgang på billedzoom */
 }
 
-.carousel-item:hover img {
-    transform: scale(1.1); /* Zoomer billedet lidt mere ved hover */
-}
-
-
 .kasse-carousel-item:hover {
     transform: scale(1.05);
 }
@@ -226,7 +266,7 @@ body {
     transform: scale(1);
 }
 
-/* Pile-knapper */
+/* PILE SEKTION */
 .kasse-arrow {
     position: absolute;
     top: 50%;
@@ -255,22 +295,42 @@ body {
     right: 10px;
 }
 
-/*Tilbudsbanner sektion*/
+/*TILBUDSBANNER SEKTION*/
+.tilbud-section {
+    padding: 0px;
+    overflow: hidden;
+    border-bottom: 4px solid var(--hvid);
+}
+
 .banner {
     background-color: var(--orange);
     color: var(--hvid);
     font-family: var(--denstore);
     font-size: xx-large;
-    padding: 30px 0; /* Mindre padding for at gøre det pænere */
-    white-space: nowrap; /* Sørger for, at teksten ikke bryder linjen */
+    padding: 30px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    display: flex;
 }
 
-.banner span {
-    display: inline-block;
-    margin-right: 30px; /* Justerer afstanden mellem ordene */
+.banner-content {
+    display: flex;
+    gap: 30px; /* Justerer afstanden mellem elementer */
+    min-width: 200%; /* Sørger for at dække hele skærmen to gange */
+    animation: scrollText 15s linear infinite;
 }
 
-/* ----Månedens øl SEKTION---- */
+@keyframes scrollText {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%); /* Halvdelen af teksten forsvinder, men den er duplikeret */
+    }
+}
+
+/* ----MÅNEDENS ØL SEKTION---- */
 .maanedens-oel-container {
     display: flex;
     align-items: center;
@@ -279,53 +339,66 @@ body {
     padding: 30px;
     margin: auto; /* Centrerer indholdet */
     background-color: var(--lysgroen);
+    border-bottom: 4px solid var(--hvid);
 }
 
 .maanedens-oel h2 {
     padding: 40px;
     font-size: 3vw;
     color: var(--hvid);
-    background-color: var(--lysgroen);
-}
-
-.maanedens-oel-tekst {
-    max-width: 400px;
-    text-align: left;
-    color: var(--hvid);
-}
-
-.maanedens-oel-tekst h2 {
     font-family: var(--denstore);
-    font-size: 40px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.maanedens-oel-tekst p {
+.linje2{
+    border-top: 4px solid var(--hvid);
+    width: 73%;
+    z-index: 1;
+    margin-top: -45px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.maanedens-oel p {
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 20px;
+    max-width: 400px;
+    text-align: center;
+    color: var(--hvid);
 }
 
 .maanedens-oel-container img {
-    width: 250px; /* Juster størrelsen på billedet */
+    width: 260px; /* Juster størrelsen på billedet */
     height: auto;
     transform: scale(1.05); /* Forstørrer artiklen lidt */
+    margin-left: 30px;
 }
 
 .maanedens-oel-container button {
     background-color: var(--groen);
     color: var(--hvid);
-    font-size: 16px;
+    font-size: 20px;
+    font-family: var(--denlille);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s ease;
-    margin-left: 100px;
-    margin-bottom: 100px;
+    margin-left: -15px;
+    margin-bottom: 102px;
 }
 
 .maanedens-oel-container button:hover {
     background-color: var(--moerkblaa);
+}
+
+.linje3{
+    border-top: 4px solid var(--hvid);
+    width: 139%;
+    z-index: 1;
+    margin-top: -90px;
+    margin-bottom: 50px;
+    margin-left: -363px;
 }
