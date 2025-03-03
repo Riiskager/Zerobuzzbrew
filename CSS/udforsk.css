@@ -59,6 +59,14 @@ body {
     scroll-snap-type: x mandatory;
     overflow-x: auto;
     scroll-behavior: smooth;
+    
+    /* Skjuler scrollbar på forskellige browsere */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer & Edge */
+}
+
+.carousel::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
 }
 
 .carousel-item {
@@ -157,6 +165,14 @@ body {
     scroll-snap-type: x mandatory;
     overflow-x: auto;
     scroll-behavior: smooth;
+
+ /* Skjuler scrollbar på forskellige browsere */
+ scrollbar-width: none; /* Firefox */
+ -ms-overflow-style: none; /* Internet Explorer & Edge */
+}
+
+.kasse-carousel::-webkit-scrollbar {
+ display: none; /* Chrome, Safari, Opera */
 }
 
 .kasse-carousel-item {
