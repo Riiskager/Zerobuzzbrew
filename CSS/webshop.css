@@ -149,7 +149,17 @@
     scroll-snap-type: x mandatory;
     overflow-x: auto;
     scroll-behavior: smooth;
-}
+
+        /* Skjuler scrollbar på forskellige browsere */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer & Edge */
+    }
+    
+    .carousel::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+    
+
 
 .carousel-item {
     flex: 0 0 auto;
@@ -264,7 +274,17 @@
     scroll-snap-type: x mandatory;
     overflow-x: auto;
     scroll-behavior: smooth;
-}
+
+        /* Skjuler scrollbar på forskellige browsere */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer & Edge */
+    }
+    
+    .carouselscrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+    
+
 
 .ipa-carousel-item {
     flex: 0 0 auto;
