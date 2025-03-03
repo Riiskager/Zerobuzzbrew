@@ -1,0 +1,316 @@
+:root {
+    --groen: #616D38;
+    --lysgroen: #B79F39;
+    --roed: #C34C27;
+    --orange: #BC6C29;
+    --moerkblaa: #183A37;
+    --lysblaa: #2E776E;
+    --beige: #EFD6AC;
+    --hvid: #FCF2E5; 
+    
+    --denlille: "serenity", sans-serif;
+    --denstore: "noka", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--denlille);
+    text-align: center;
+    background: linear-gradient(165deg, #FCE5CD 50%, #B79F39 50%);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.sprog img {
+    width: 20px;
+    height: auto;
+}
+
+
+/* ----Nyheds produkter SEKTION---- */
+.nyheder {
+    background-color: var(--);
+    color: var(--groen);
+}
+
+.produkt-container {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin: 20px 0;
+}
+
+.produkt img {
+    width: 200px;
+    height: auto;
+}
+
+/* ----CAROUSEL SEKTION---- */
+.nyheder{
+    color: var(--lysgroen);
+    margin-top: 50px;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.carousel-container {
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container p{
+    font-size: 25px;
+}
+
+
+.carousel {
+    display: flex;
+    width: max-content;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 33.33%; /* Vist 3 billeder ad gangen */
+    padding: 10px; /* Afstand mellem billeder */
+    box-sizing: border-box;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-item img {
+    width: 55%;
+    height: auto;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05); /* Forstørrer artiklen lidt */
+  }
+
+  .carousel-item:hover img {
+    transform: scale(1); /* Zoomer billedet lidt mere ved hover */
+  }
+   
+.image-name {
+    width: 80%; /* Juster størrelsen på PNG-billedet */
+    margin-top: 10px; /* Afstand mellem billede og tekst */
+    height: auto;
+}
+
+/* Carousel kontrol-pilene */
+.carousel-container::before,
+.carousel-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #F4F1EA;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    display: none; /* Pilene er skjult som standard */
+}
+
+.carousel-container::before {
+    left: 10px;
+    content: '←'; /* Venstre pil */
+}
+
+.carousel-container::after {
+    right: 10px;
+    content: '→'; /* Højre pil */
+}
+
+.carousel-container:hover::before,
+.carousel-container:hover::after {
+    display: block; /* Vis pilene, når der hoveres på containeren */
+}
+
+.carousel-container:hover::before {
+    left: 10px;
+}
+
+.carousel-container:hover::after {
+    right: 10px;
+}
+
+/* Pil hover-effekt */
+.carousel-container::before:hover,
+.carousel-container::after:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* ----Månedskasser SEKTION---- */
+.maanedens-kasser{
+    background-color: var(--lysblaa);
+    color: var(--beige);
+    font-size: 30px;
+    padding: 40px;
+}
+
+.maanedens-kasser p{
+    font-size: 25px;
+}
+
+.maaendens-container {
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    background-color: var(--lysblaa);
+    margin-top: 30px;
+}
+
+/* ----Tilbud SEKTION---- */
+.tilbuds-banner{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    background-color: var(--orange);
+    color: var(--hvid);
+}
+
+
+/* ----Månedens øl SEKTION---- */
+.maanedens-oel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Afstand mellem tekst og billede */
+    padding: 30px;
+    margin: auto; /* Centrerer indholdet */
+    background-color: var(--lysgroen);
+}
+
+.maanedens-oel h2 {
+    padding: 40px;
+    font-size: 50px;
+    color: var(--hvid);
+    background-color: var(--lysgroen);
+}
+
+.maanedens-oel-tekst {
+    max-width: 400px;
+    text-align: left;
+    color: var(--hvid);
+}
+
+.maanedens-oel-tekst h3 {
+    font-family: var(--denstore);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.maanedens-oel-tekst p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.maanedens-oel-container img {
+    width: 250px; /* Juster størrelsen på billedet */
+    height: auto;
+}
+
+.maanedens-oel-container button {
+    background-color: var(--groen);
+    color: var(--hvid);
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.maanedens-oel-container button:hover {
+    background-color: var(--moerkblaa);
+}
+
+footer{
+    background-color: var(--moerkblaa);
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    font-family: var(--denlille);
+    color: var(--lysblaa);
+}
+
+.altekstfooter {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footerlinktekst {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footerlinktekst:hover {
+    text-decoration: underline;
+}
+
+#logofooter{
+    width: 250px;
+    height: auto;
+    margin-top: -60px;
+}
+
+#logofooter:hover{
+    cursor: pointer;
+}
+
+#facebook{
+    width: 40px;
+    height: auto;
+    padding-right: 10px;
+}
+
+#instagram{
+    width: 40px;
+    height: auto;
+    padding-right: 10px;
+}
+
+#linkedin{
+    width: 40px;
+    height: auto;
+}

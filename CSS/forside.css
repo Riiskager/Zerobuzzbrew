@@ -6,7 +6,7 @@
     --moerkblaa: #183A37;
     --lysblaa: #2E776E;
     --beige: #EFD6AC;
-    --hvid: #fcf2e5;
+    --hvid: #FCF2E5;
 
 --denlille: "serenity", sans-serif;
 --denstore: "noka", sans-serif;
@@ -18,8 +18,6 @@ html{
 
 body{
     background-color: var(--hvid);
-    padding: 0;
-    margin: 0;
 }
 
 body, h1{

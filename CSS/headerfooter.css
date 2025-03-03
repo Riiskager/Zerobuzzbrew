@@ -1,0 +1,99 @@
+/*Variabler*/
+:root{
+    margin: 0;
+    padding: 0;
+    --groen: #616D38;
+    --lysgroen: #B79F39;
+    --roed: #C34C27;
+    --orange: #BC6C29;
+    --moerkblaa: #183A37;
+    --lysblaa: #2E776E;
+    --beige: #EFD6AC;
+    --hvid: #FCF2E5;
+
+--denlille: "serenity", sans-serif;
+--denstore: "noka", sans-serif;
+}
+
+/*Header redigering*/
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#logoheader{
+    width: 10vw;
+    height: auto;
+}
+
+.navindhold{
+    font-family: var(--denstore);
+    color: var(--orange);
+    text-decoration: none;
+}
+
+.navlist{
+    list-style-type: none;
+}
+
+.navindhold:hover{
+    text-decoration: underline;
+}
+
+/*footer redigering*/
+footer{
+    background-color: var(--moerkblaa);
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    font-family: var(--denlille);
+    color: var(--lysblaa);
+}
+
+.altekstfooter {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footerlinktekst {
+    text-decoration: none;
+    color: inherit;
+    transform: scaleX(0);
+}
+
+.footerlinktekst:hover {
+    text-decoration: underline;
+    transform: scaleX(1);
+}
+
+#logofooter{
+    width: 250px;
+    height: auto;
+    margin-top: -60px;
+}
+
+#logofooter:hover{
+    cursor: pointer;
+}
+
+#facebook{
+    width: 40px;
+    height: auto;
+    padding-right: 10px;
+}
+
+#instagram{
+    width: 40px;
+    height: auto;
+    padding-right: 10px;
+}
+
+#linkedin{
+    width: 40px;
+    height: auto;
+}
