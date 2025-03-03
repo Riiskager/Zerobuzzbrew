@@ -22,6 +22,33 @@ body{
     background-color: var(--beige);
 }
 
+.hvorerdu{
+    display: flex;
+    font-family: var(--denlille);
+    color: var(--hvid);
+    font-size: 1.5vw;
+    padding-left: 3vw;
+    align-items: center;
+    margin-bottom: -30px;
+}
+
+.Forside {
+    font-family: var(--denlille);
+    color: var(--hvid);
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+
+.Forside:hover {
+    text-decoration: underline;
+    color: var(--hvid);
+}
+
+.omos{
+    text-decoration: underline;
+    padding-left: 5px;
+}
+
 .linje1{
     border-top: 4px solid var(--roed);
     width: 30%;
@@ -37,7 +64,7 @@ body{
     z-index: 1;
     position: absolute;
     right: 0;
-    top: 75%;
+    top: 80%;
     transform: translateY(-50%);
 }
 

@@ -239,10 +239,6 @@
 }
 
 
-    
-
-
-
  /* IPA sektion */
 .ipa-oversigt h2 {
     color: var(--beige);
@@ -253,8 +249,10 @@
     text-align: center;
     background-color: var(--roed);
     margin: 0;
-    margin-bottom: -50px;
+    margin-bottom: -60px;
     text-decoration: underline;
+    padding: 30px 0;
+    
 }
 
 .ipa-carousel-container {
@@ -346,14 +344,18 @@
 
 
    
-
 /*Slogan sektion*/
-.sammenhold-section h2 {
-    background-color: var(--lysgroen); /* En farve, der matcher designet */
-    padding: 20px;
-    text-align: center;
-    font-size: 3vw;
+.sammenhold {
+    background-color: var(--orange);
     color: var(--hvid);
-    font-family: var(--denstore);
- 
+    font-family: var(--denlille);
+    font-size: xx-large;
+    padding: 20px 0; /* Mindre padding for at gøre det pænere */
+    white-space: nowrap; /* Sørger for, at teksten ikke bryder linjen */
 }
+
+.sammenhold span {
+    display: inline-block;
+    margin-right: 30px; /* Justerer afstanden mellem ordene */
+}
+
