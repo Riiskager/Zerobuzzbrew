@@ -1,4 +1,7 @@
 :root {
+:root{
+    margin: 0;
+    padding: 0;
     --groen: #616D38;
     --lysgroen: #B79F39;
     --roed: #C34C27;
@@ -257,4 +260,9 @@ nav ul li a {
 
 .maanedens-oel-container button:hover {
     background-color: var(--moerkblaa);
+}
+    --hvid: #FCF2E5;
+
+--denlille: "serenity", sans-serif;
+--denstore: "noka", sans-serif;
 }
