@@ -47,11 +47,12 @@ header{
     width: 100%;
 }
 header, video{
+    display: block;
     width: 100%;
 }
 
 #maanedens{
-    margin: 10px 20px 20px 20px;
+    margin: 0 20px 20px 20px;
     display: flex;
     justify-content: space-between;
     font-size: xx-large;
@@ -91,14 +92,26 @@ header, video{
 
 .linje{
     border-top: 4px solid var(--roed);
-    width: 300px;
+    width: 70%;
     z-index: 1;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-left: -60px;
 }
 
 #billede{
-    border: 5px solid var(--lysblaa);
-    min-width: 40%;
+    display: block;
+    min-width: 25%;
+    max-width: 100%;
+    margin-right: 10%;
 }
 
+.banner{
+    background-color: var(--lysblaa);
+    color: var(--hvid);
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: var(--denlille);
+    font-size: xx-large;
+    padding: 40px 0;
+}
 
