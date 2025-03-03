@@ -117,15 +117,19 @@ body {
     font-size: 48px;
     cursor: pointer;
     color: var(--beige);
-    background-color: var(--beige); /* Gør dem mere synlige */
     background: none;
     border: none;
-    transition: background-color 0.3s;
+    border-radius: 50%;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), color 0.5s ease;
+    z-index: 10;
 }
 
 .arrow:hover {
-    color: var(--roed);
+    transform: translateY(-50%) scale(1.5); /* Større og blødere zoom */
+    color: var(--lysblaa);
 }
+
+
 
 /* Justér pilenes placering, så de er tættere på billederne */
 #prev {
@@ -148,6 +152,7 @@ body {
 
 .maanedens-kasser p{
     font-size: 25px;
+    font-family: var(--denlille);
 }
 
 .maaendens-container {
@@ -156,6 +161,73 @@ body {
     gap: 160px;
     background-color: var(--lysblaa);
     margin-top: 30px;
+}
+
+.produkt {
+    display: flex;
+    width: max-content;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.produkt-item {
+    flex: 0 0 auto;
+    width: 33.33%; /* Vist 3 billeder ad gangen */
+    padding: 10px; /* Afstand mellem billeder */
+    box-sizing: border-box;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produkt-item img {
+    width: 55%;
+    height: auto;
+}
+
+.produkt-item:hover {
+    transform: scale(1.05); /* Forstørrer artiklen lidt */
+  }
+
+.produkt-item:hover img {
+    transform: scale(1); /* Zoomer billedet lidt mere ved hover */
+  }
+   
+.image-name {
+    width: 80%; /* Juster størrelsen på PNG-billedet */
+    margin-top: 10px; /* Afstand mellem billede og tekst */
+    height: auto;
+}
+
+/* Pile-knapper */
+.arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 48px;
+    cursor: pointer;
+    color: var(--beige);
+    background: none;
+    border: none;
+    border-radius: 50%;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), color 0.5s ease;
+    z-index: 10;
+}
+
+.arrows:hover {
+    transform: translateY(-50%) scale(1.5); /* Større og blødere zoom */
+    color: var(--lysblaa);
+}
+
+/* Justér pilenes placering, så de er tættere på billederne */
+#prev {
+    left: 10px; /* Flyt længere ind */
+}
+
+#next {
+    right: 10px; /* Flyt længere ind */
 }
 
 
