@@ -26,7 +26,7 @@
 
 
     .breadcrumbs {
-        font-size: 20px;
+        font-size: 2vw;
         font-family: var(--denlille);
         color: var(--beige);
         margin-top: 10px;
@@ -81,7 +81,7 @@
     .categories li a {
         color: var(--roed); 
         text-decoration: none;
-        font-size: 25px; /* Justér efter behov */
+        font-size: 3vw; /* Justér efter behov */
         font-family: var(--denstore);
         position: relative;
       padding-bottom: 5px;
@@ -112,13 +112,14 @@
 .mestpopulaere h2{
     color: var(--beige);
     margin-top: 50px;
-    font-size: 40px;
+    font-size: 3vw;
     font-family: var(--denstore);
     margin-bottom: 30px;
     text-align: center;
     background-color: var(--lysblaa);
     margin-bottom: -40px;
     padding: 50px 0;
+    text-decoration: underline;
 }
 
 .carousel-container {
@@ -135,7 +136,7 @@
 }
 
 .carousel-container p{
-    font-size: 25px;
+    font-size: 2.5vw;
     font-family: var(--denlille);
     color: var(--beige);
     
@@ -217,7 +218,7 @@
         background-color: #E16F3D; /* En farve, der matcher designet */
         padding: 20px;
         text-align: center;
-        font-size: 24px;
+        font-size: 3vw;
         color: var(--hvid);
         font-family: var(--denstore);
      
@@ -230,13 +231,14 @@
 .ipa-oversigt h2 {
     color: var(--beige);
     margin-top: 50px;
-    font-size: 40px;
+    font-size: 3vw;
     font-family: var(--denstore);
     margin-bottom: 30px;
     text-align: center;
     background-color: var(--roed);
     margin: 0;
     margin-bottom: -50px;
+    text-decoration: underline;
 }
 
 .ipa-carousel-container {
@@ -251,7 +253,7 @@
 }
 
 .ipa-carousel-container p {
-    font-size: 25px;
+    font-size: 2.5vw;
     font-family: var(--denlille);
     color: var(--beige);
 }
@@ -304,7 +306,7 @@
 }
 
 .ipa-arrow:hover {
-    color: var(--lysgul);
+    color: var(--orange);
 }
 
 /* Justér pilenes placering */
@@ -324,7 +326,7 @@
     background-color: var(--lysgroen); /* En farve, der matcher designet */
     padding: 20px;
     text-align: center;
-    font-size: 24px;
+    font-size: 3vw;
     color: var(--hvid);
     font-family: var(--denstore);
  
