@@ -84,12 +84,23 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.2s ease-in-out; /* Hurtigere overgang */
+}
+
+.carousel-item:hover {
+    transform: scale(1.05); /* Forstørrer artiklen lidt */
 }
 
 .carousel-item img {
     width: 55%;
     height: auto;
+    transition: transform 0.2s ease-in-out; /* Hurtigere overgang på billedzoom */
 }
+
+.carousel-item:hover img {
+    transform: scale(1.1); /* Zoomer billedet lidt mere ved hover */
+}
+
 
 .carousel-item:hover {
     transform: scale(1.05); /* Forstørrer artiklen lidt */
@@ -182,19 +193,30 @@ body {
 
 .kasse-carousel-item {
     flex: 0 0 auto;
-    width: 33.33%; /* Viser 3 billeder ad gangen */
+    width: 33.33%; /* Vist 3 billeder ad gangen */
     padding: 10px; /* Afstand mellem billeder */
     box-sizing: border-box;
     scroll-snap-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.2s ease-in-out; /* Hurtigere overgang */
+}
+
+.kasse-carousel-item:hover {
+    transform: scale(1.05); /* Forstørrer artiklen lidt */
 }
 
 .kasse-carousel-item img {
     width: 55%;
     height: auto;
+    transition: transform 0.2s ease-in-out; /* Hurtigere overgang på billedzoom */
 }
+
+.carousel-item:hover img {
+    transform: scale(1.1); /* Zoomer billedet lidt mere ved hover */
+}
+
 
 .kasse-carousel-item:hover {
     transform: scale(1.05);
@@ -233,15 +255,19 @@ body {
     right: 10px;
 }
 
-/* ----Tilbud banner SEKTION---- */
-.banner{
+/*Tilbudsbanner sektion*/
+.banner {
     background-color: var(--orange);
     color: var(--hvid);
-    display: flex;
-    flex-wrap: nowrap;
-    font-family: var(--denlille);
+    font-family: var(--denstore);
     font-size: xx-large;
-    padding: 40px 0;
+    padding: 30px 0; /* Mindre padding for at gøre det pænere */
+    white-space: nowrap; /* Sørger for, at teksten ikke bryder linjen */
+}
+
+.banner span {
+    display: inline-block;
+    margin-right: 30px; /* Justerer afstanden mellem ordene */
 }
 
 /* ----Månedens øl SEKTION---- */
@@ -284,6 +310,7 @@ body {
 .maanedens-oel-container img {
     width: 250px; /* Juster størrelsen på billedet */
     height: auto;
+    transform: scale(1.05); /* Forstørrer artiklen lidt */
 }
 
 .maanedens-oel-container button {
