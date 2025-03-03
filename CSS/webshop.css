@@ -24,7 +24,8 @@
         position: relative;
         width: 100vw;
         height: 550px; /* Justér efter behov */
-        background: linear-gradient(165deg, #FCE5CD 50%, #B79F39 50%);
+        background: linear-gradient(165deg, #FCF2E5 50%, #B79F39 50%);
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -48,9 +49,10 @@
         text-decoration: none;
         font-size: 25px; /* Justér efter behov */
         font-family: var(--denstore);
+      
     }
     
-    
+
 
     .popular-products {
         background-color: var(--lysblaa); /* Blå sektion */
@@ -62,7 +64,7 @@
     h2 {
         font-size: 32px;
         color: var(--beige);
-        font-family: var(--denstore) /* Justér til din font */
+        font-family: var(--denstore) 
     }
     
     p {
@@ -78,7 +80,7 @@
         justify-content: center;
         position: relative;
         width: 100%; /* Fylder hele sektionen */
-        max-width: 1200px; /* Justér efter behov */
+        max-width: 1200px; 
         margin: auto;
         overflow: hidden; /* Sikrer at billeder ikke går udenfor */
     }
@@ -117,7 +119,7 @@
     }
     
     .arrow:hover {
-        background-color: rgba(255, 255, 255, 1);
+        background-color: var(--orange);
     }
     
     /* Justér pilenes placering, så de er tættere på billederne */
@@ -127,5 +129,18 @@
     
     #next {
         right: 10px; /* Flyt længere ind */
+    }
+    
+
+/*Slogan sektion*/
+    .slogan-section {
+        background-color: #E16F3D; /* En farve, der matcher designet */
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--hvid);
+        text-transform: uppercase;
+     
     }
     
