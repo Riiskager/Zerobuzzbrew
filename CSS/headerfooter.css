@@ -16,29 +16,45 @@
 }
 
 /*Header redigering*/
-.navbar{
+header {
+    display: flex;
+    justify-content: center; /* Center content */
+    align-items: center; /* Align items vertically */
+    padding: 10px 20px;
+    background-color: var(--hvid); /* Optional */
+}
+
+.navbar {
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
-#logoheader{
+#logoheader {
     width: 10vw;
     height: auto;
+    margin-left: -250px;
 }
 
-.navindhold{
+
+.navlist {
+    list-style: none;
+    display: flex;
+    gap: 150px;
+    font-size: 1.5rem;
+}
+
+.navindhold {
     font-family: var(--denstore);
     color: var(--orange);
     text-decoration: none;
 }
 
-.navlist{
-    list-style-type: none;
-}
-
-.navindhold:hover{
+.navindhold:hover {
     text-decoration: underline;
 }
+
 
 /*footer redigering*/
 footer{
