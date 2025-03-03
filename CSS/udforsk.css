@@ -22,6 +22,11 @@ body {
     font-family: var(--denlille);
     text-align: center;
     position: relative;
+
+}
+
+.hero {
+    position: relative;
     width: 100vw;
     height: 550px; /* Justér efter behov */
     background: linear-gradient(165deg, #FCF2E5 50%, #C34C27 50%);
@@ -156,7 +161,6 @@ body {
 .kasse-carousel-container p {
     font-size: 25px;
     font-family: var(--denlille);
-    color: var(--beige);
 }
 
 .kasse-carousel {
@@ -171,7 +175,7 @@ body {
  -ms-overflow-style: none; /* Internet Explorer & Edge */
 }
 
-.kasse-carousel::-webkit-scrollbar {
+.carousel::-webkit-scrollbar {
  display: none; /* Chrome, Safari, Opera */
 }
 
