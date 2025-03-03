@@ -67,6 +67,7 @@ body {
 
 .carousel-container p{
     font-size: 25px;
+    font-family: var(--denlille);
 }
 
 
@@ -98,7 +99,7 @@ body {
     transform: scale(1.05); /* Forstørrer artiklen lidt */
   }
 
-  .carousel-item:hover img {
+.carousel-item:hover img {
     transform: scale(1); /* Zoomer billedet lidt mere ved hover */
   }
    
@@ -108,38 +109,31 @@ body {
     height: auto;
 }
 
-/* Carousel kontrol-pilene */
-.carousel-container::before,
-.carousel-container::after {
-    content: '';
+/* Pile-knapper */
+.arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #F4F1EA;
-    padding: 10px;
+    font-size: 48px;
     cursor: pointer;
-    font-size: 24px;
-    display: none; /* Pilene er skjult som standard */
+    color: var(--beige);
+    background-color: var(--beige); /* Gør dem mere synlige */
+    background: none;
+    border: none;
+    transition: background-color 0.3s;
 }
 
-.carousel-container::before {
-    left: 10px;
-    content: '←'; /* Venstre pil */
+.arrow:hover {
+    color: var(--roed);
 }
 
-.carousel-container::after {
-    right: 10px;
-    content: '→'; /* Højre pil */
+/* Justér pilenes placering, så de er tættere på billederne */
+#prev {
+    left: 10px; /* Flyt længere ind */
 }
 
-
-.carousel-container:hover::before {
-    left: 10px;
-}
-
-.carousel-container:hover::after {
-    right: 10px;
+#next {
+    right: 10px; /* Flyt længere ind */
 }
 
 
@@ -164,33 +158,6 @@ body {
     margin-top: 30px;
 }
 
-/* Pile-knapper */
-.arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 48px;
-    cursor: pointer;
-    color: var(--beige);
-    background-color: var(--beige); /* Gør dem mere synlige */
-    background: none;
-    border: none;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-}
-
-.arrow:hover {
-    color: var(--roed);
-}
-
-/* Justér pilenes placering, så de er tættere på billederne */
-#prev {
-    left: 10px; /* Flyt længere ind */
-}
-
-#next {
-    right: 10px; /* Flyt længere ind */
-}
 
 /* ----Tilbud SEKTION---- */
 .tilbuds-banner{
@@ -198,7 +165,13 @@ body {
     height: 100px;
     justify-content: center;
     background-color: var(--orange);
+}
+
+.tilbuds-banner h1{
     color: var(--hvid);
+    font-family: var(--denlille);
+    margin-top: 30px;
+    font-size: 30px;
 }
 
 
@@ -211,7 +184,6 @@ body {
     padding: 30px;
     margin: auto; /* Centrerer indholdet */
     background-color: var(--lysgroen);
-    margin-bottom: 70px;
 }
 
 .maanedens-oel h2 {
@@ -255,6 +227,7 @@ body {
     cursor: pointer;
     transition: 0.3s ease;
     margin-left: 100px;
+    margin-bottom: 100px;
 }
 
 .maanedens-oel-container button:hover {
