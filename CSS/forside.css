@@ -17,42 +17,56 @@
 --denlille: "serenity", sans-serif;
 --denstore: "noka", sans-serif;
 }
+
+
 html{
     margin: 0px;
     padding: 0px;
 }
+
+
 html, body{
     width: 100%;
     height: 100%;
 }
+
+
 ::-webkit-scrollbar{
     display: none;
 }
 
+
 body{
     background-color: var(--hvid);
 }
+
 
 body, h1{
     font-family: var(--denstore);
     color: var(--roed);
     padding-bottom: 20px;
 }
+
+
 #maanedens, p{
     font-family: var(--denlille);
     color: var(--roed);
     padding-bottom: 40px;
 }
+
+
 header{
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
+
 header, video{
     display: block;
     width: 100%;
 }
+
 
 #maanedens{
     margin: 0 20px 20px 20px;
@@ -60,6 +74,8 @@ header, video{
     justify-content: space-between;
     font-size: xx-large;
 }
+
+
 .købnu{
     font-family: var(--denlille);
     font-size: xx-large;
@@ -69,29 +85,40 @@ header, video{
     padding: 10px;
     border: 0px;
 }
+
+
 .købnu:active{
     background-color: var(--roed);
     border: 1px solid var(--orange);
 }
+
+
 .købnu:hover{
     background-color: var(--orange);
 
 }
+
+
 #maanedens, .text{
     display: flex;
     justify-content: center;
     padding: 30px;
 }
+
+
 #maanedens, h1{
     display: flex;
     justify-content: center;
     text-decoration: underline;
 }
+
+
 #maanedens, p{
     display: flex;
     justify-content: center;
     text-decoration: none;
 }
+
 
 .linje{
     border-top: 4px solid var(--roed);
@@ -101,12 +128,14 @@ header, video{
     margin-left: -60px;
 }
 
+
 #billede{
     display: block;
     min-width: 25%;
     max-width: 100%;
     margin-right: 10%;
 }
+
 
 .banner {
     background-color: var(--lysblaa);
@@ -119,12 +148,14 @@ header, video{
     position: relative;
 }
 
+
 .marquee {
     display: flex;
     gap: 100px; /* Spacing mellem elementerne */
     animation: marquee 20s linear infinite;
     width: max-content;
 }
+
 
 @keyframes marquee {
     from {
@@ -135,20 +166,26 @@ header, video{
     }
 }
 
+
 .udvalg{
     background-color: var(--orange);
 }
+
+
 .udvalg h1{
     padding: 50px;
     color: var(--beige);
     font-size: 50px;
 }
 
+
 .daaser{
     display: flex;
     justify-content: space-between;
     padding: 0 100px 50px 100px;
 }
+
+
 .daaser, p{
     color: var(--beige);
     font-size: 40px;
