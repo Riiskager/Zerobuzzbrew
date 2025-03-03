@@ -25,6 +25,10 @@ body {
 
 }
 
+.header{
+    background-color: var(--hvid);
+}
+
 .hero {
     position: relative;
     width: 100vw;
