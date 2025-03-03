@@ -148,39 +148,6 @@
     height: auto;
 }
 
-/* Carousel kontrol-pilene */
-.carousel-container::before,
-.carousel-container::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #F4F1EA;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 24px;
-    display: none; /* Pilene er skjult som standard */
-}
-
-.carousel-container::before {
-    left: 10px;
-    content: '←'; /* Venstre pil */
-}
-
-.carousel-container::after {
-    right: 10px;
-    content: '→'; /* Højre pil */
-}
-
-
-.carousel-container:hover::before {
-    left: 10px;
-}
-
-.carousel-container:hover::after {
-    right: 10px;
-}
 
 
 
@@ -197,6 +164,7 @@
     border: none;
     border-radius: 50%;
     transition: background-color 0.3s;
+    z-index: 10;
 }
 
 .arrow:hover {
