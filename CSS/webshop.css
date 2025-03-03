@@ -23,6 +23,31 @@
     body{
         background-color: var(--hvid)
     }
+
+
+    .breadcrumbs {
+        font-size: 20px;
+        font-family: var(--denlille);
+        color: var(--beige);
+        margin-top: 10px;
+        margin-left: 50px;
+
+    }
+    
+    .breadcrumbs a {
+        text-decoration: none;
+        color: var(--beige);
+        font-weight: 500;
+    }
+    
+    .breadcrumbs a:hover {
+        text-decoration: underline;
+    }
+    
+    .breadcrumbs .active {
+        text-decoration: underline;
+    }
+    
     
 /*Store billede øverst*/
     .hero {
