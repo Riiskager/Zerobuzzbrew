@@ -135,7 +135,7 @@ body {
     font-family: var(--denlille);
 }
 
-.maaendens-container {
+.kasse-carousel-container {
     margin-top: 50px;
     width: 100%;
     overflow: hidden;
@@ -145,13 +145,13 @@ body {
     align-items: center;
 }
 
-.maaendens-container p{
+.kasse-carousel-container p {
     font-size: 25px;
     font-family: var(--denlille);
+    color: var(--beige);
 }
 
-
-.carouselle {
+.kasse-carousel {
     display: flex;
     width: max-content;
     scroll-snap-type: x mandatory;
@@ -159,9 +159,9 @@ body {
     scroll-behavior: smooth;
 }
 
-.produkt {
+.kasse-carousel-item {
     flex: 0 0 auto;
-    width: 33.33%; /* Vist 3 billeder ad gangen */
+    width: 33.33%; /* Viser 3 billeder ad gangen */
     padding: 10px; /* Afstand mellem billeder */
     box-sizing: border-box;
     scroll-snap-align: center;
@@ -170,28 +170,23 @@ body {
     align-items: center;
 }
 
-.produkt img {
+.kasse-carousel-item img {
     width: 55%;
     height: auto;
 }
 
-.produkt:hover {
-    transform: scale(1.05); /* Forstørrer artiklen lidt */
-  }
+.kasse-carousel-item:hover {
+    transform: scale(1.05);
+}
 
-.produkt:hover img {
-    transform: scale(1); /* Zoomer billedet lidt mere ved hover */
-  }
-   
-.image-name {
-    width: 80%; /* Juster størrelsen på PNG-billedet */
-    margin-top: 10px; /* Afstand mellem billede og tekst */
-    height: auto;
+.kasse-carousel-item:hover img {
+    transform: scale(1);
 }
 
 /* Pile-knapper */
-.arrows {
+.kasse-arrow {
     position: absolute;
+    top: 50%;
     transform: translateY(-50%);
     font-size: 48px;
     cursor: pointer;
@@ -203,23 +198,19 @@ body {
     z-index: 10;
 }
 
-.arrows:hover {
-    transform: translateY(-50%) scale(1.5); /* Større og blødere zoom */
+.kasse-arrow:hover {
     color: var(--roed);
+    transform: translateY(-50%) scale(1.5); /* Større og blødere zoom */
 }
 
-/* Justér pilenes placering, så de er tættere på billederne */
-#prev {
-    left: 10px; /* Flyt længere ind */
+/* Justér pilenes placering */
+#prev-kasse {
+    left: 10px;
 }
 
-#next {
-    right: 10px; /* Flyt længere ind */
+#next-kasse {
+    right: 10px;
 }
-
-
-
-
 
 /* ----Tilbud SEKTION---- */
 .tilbuds-banner{

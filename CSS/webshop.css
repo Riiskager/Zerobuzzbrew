@@ -286,3 +286,14 @@
 
 
    
+
+/*Slogan sektion*/
+.sammenhold-section h2 {
+    background-color: var(--lysgroen); /* En farve, der matcher designet */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--hvid);
+    font-family: var(--denstore);
+ 
+}
