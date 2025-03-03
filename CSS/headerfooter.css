@@ -18,10 +18,9 @@
 /*Header redigering*/
 header {
     display: flex;
-    justify-content: center; /* Center content */
-    align-items: center; /* Align items vertically */
+    justify-content: center;
+    align-items: center;
     padding: 10px 20px;
-    background-color: var(--hvid); /* Optional */
 }
 
 .navbar {
@@ -59,16 +58,16 @@ header {
     color: var(--orange);
     font-family: var(--denstore);
     font-size: 1rem;
-    background-color: var(--hvid);
+    background-color: transparent;
     border: none;
     display: flex;
     gap: 10px;
-    width: 120px; /* Sæt en fast bredde */
-    height: 40px;  /* Sæt en fast højde */
-    align-items: center; /* Centrerer indholdet */
+    width: 120px;
+    height: 40px;
+    align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    padding: 10px; /* Hold padding ensartet */
+    padding: 10px;
 }
 
 
@@ -127,7 +126,7 @@ header {
 
 .fa-caret-down {
     position: relative;
-    top: 5px;
+    padding-top: 3px;
 }
 
 .flag{
