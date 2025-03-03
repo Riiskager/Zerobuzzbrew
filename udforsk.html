@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/sth5zld.css"> <!--Font link-->
     <link rel="stylesheet" href="CSS/udforsk.css">
+    <link rel="stylesheet" href="CSS/headerfooter.css">
     <title>ZeroBuzz Brew</title>
 </head>
 <body>
@@ -23,6 +24,7 @@
     <section class="nyheder">
         <h2>Nyheder</h2>
         <div class="carousel-container">
+          <button id="prev" class="arrow">&#9664;</button> <!-- Venstre pil -->
           <div class="carousel">
             <div class="carousel-item">
               <img src="IMG/rood.png" alt="Billede 1" class="carousel-billeder" loading="lazy">  
@@ -55,6 +57,7 @@
               <p>X,-</p>
             </div>
           </div>
+          <button id="next" class="arrow">&#9654;</button> <!-- Højre pil -->
         </div>
       </section>
 
@@ -77,6 +80,7 @@
                 <p>X,-</p>
             </div>
         </div>
+      </div>
     </section>
 
     <section class="tilbuds-banner">
@@ -84,10 +88,9 @@
     </section>
 
     <section class="maanedens-oel">
-      <h2>Månedens Øl</h2>
       <div class="maanedens-oel-container">
           <div class="maanedens-oel-tekst">
-              <h3>Månedens Øl</h3>
+              <h2>Månedens Øl</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
               <button>Læg i kurv</button>
           </div>
@@ -114,6 +117,6 @@
       </section>
   </footer>
   
-  <script src="JS/webshop.js"></script>
+  <script src="JS/udforsk.js"></script>
 </body>
 </html>
