@@ -14,9 +14,14 @@
 --denstore: "noka", sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
     body{
-        background-color: var(--beige);
+        background-color: var(--lysblaa)
     }
     
 
@@ -76,93 +81,145 @@
 
 /*produkt sektion*/
 
-    .popular-products {
-        background-color: var(--lysblaa); /* Blå sektion */
-        padding: 40px 0;
-        text-align: center;
-        width: 100vw;
-    }
+.nyheder h2{
+    color: var(--beige);
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: var(--denstore);
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: var(--lysblaa);
+}
+
+.carousel-container {
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lysblaa);
+}
+
+.carousel-container p{
+    font-size: 25px;
+    font-family: var(--denlille);
+    color: var(--beige);
     
-    h2 {
-        font-size: 32px;
-        color: var(--beige);
-        font-family: var(--denstore) 
-    }
-    
-    p {
-        color: var(--beige);
-        font-size: 25px;
-        font-family: var(--denlille);
-    }
-    
-    /* Karussel-opsætning */
-    .carousel-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        width: 100%; /* Fylder hele sektionen */
-        max-width: 1200px; 
-        margin: auto;
-        overflow: hidden; /* Sikrer at billeder ikke går udenfor */
-    }
-    
-    .carousel {
-        display: flex;
-        overflow: hidden;
-        width: 80%; /* Gør karussellen bredere */
-        max-width: 900px; /* Sikrer, at den ikke bliver for stor */
-    }
-    
-    .product {
-        min-width: 200px; /* Produktets bredde */
-        text-align: center;
-        transition: transform 0.5s ease-in-out;
-    }
-    
-    .product img {
-        width: 100%;
-        border-radius: 8px;
-    }
-    
-    /* Pile-knapper */
-    .arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 48px;
-        cursor: pointer;
-        color: var(--beige);
-        background-color: var(--beige); /* Gør dem mere synlige */
-        background: none;
-        border: none;
-        border-radius: 50%;
-        transition: background-color 0.3s;
-    }
-    
-    .arrow:hover {
-        background-color: var(--orange);
-    }
-    
-    /* Justér pilenes placering, så de er tættere på billederne */
-    #prev {
-        left: 10px; /* Flyt længere ind */
-    }
-    
-    #next {
-        right: 10px; /* Flyt længere ind */
-    }
-    
+}
+
+
+.carousel {
+    display: flex;
+    width: max-content;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 33.33%; /* Vist 3 billeder ad gangen */
+    padding: 10px; /* Afstand mellem billeder */
+    box-sizing: border-box;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-item img {
+    width: 55%;
+    height: auto;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05); /* Forstørrer artiklen lidt */
+  }
+
+  .carousel-item:hover img {
+    transform: scale(1); /* Zoomer billedet lidt mere ved hover */
+  }
+   
+.image-name {
+    width: 80%; /* Juster størrelsen på PNG-billedet */
+    margin-top: 10px; /* Afstand mellem billede og tekst */
+    height: auto;
+}
+
+/* Carousel kontrol-pilene */
+.carousel-container::before,
+.carousel-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #F4F1EA;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    display: none; /* Pilene er skjult som standard */
+}
+
+.carousel-container::before {
+    left: 10px;
+    content: '←'; /* Venstre pil */
+}
+
+.carousel-container::after {
+    right: 10px;
+    content: '→'; /* Højre pil */
+}
+
+
+.carousel-container:hover::before {
+    left: 10px;
+}
+
+.carousel-container:hover::after {
+    right: 10px;
+}
+
+
+
+/* Pile-knapper */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 48px;
+    cursor: pointer;
+    color: var(--beige);
+    background-color: var(--beige); /* Gør dem mere synlige */
+    background: none;
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.arrow:hover {
+    color: var(--roed);
+}
+
+/* Justér pilenes placering, så de er tættere på billederne */
+#prev {
+    left: 10px; /* Flyt længere ind */
+}
+
+#next {
+    right: 10px; /* Flyt længere ind */
+}
 
 /*Slogan sektion*/
-    .slogan-section {
+    .slogan-section h2 {
         background-color: #E16F3D; /* En farve, der matcher designet */
         padding: 20px;
         text-align: center;
         font-size: 24px;
-        font-weight: bold;
         color: var(--hvid);
-        text-transform: uppercase;
+        font-family: var(--denstore);
      
     }
     

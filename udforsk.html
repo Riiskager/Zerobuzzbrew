@@ -4,25 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/sth5zld.css"> <!--Font link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSS/udforsk.css">
+    <link rel="stylesheet" href="CSS/headerfooter.css">
     <title>ZeroBuzz Brew</title>
 </head>
 <body>
-    <header>
-        <div class="logo"></div>
-        <nav>
-            <ul>
-                <li><a href="#udforsk">Udforsk</a></li>
-                <li><a href="#om-os">Om os</a></li>
-                <li><a href="#webshop">Webshop</a></li>
-            </ul>
-        </nav>
-        <div class="sprog">DA ▼<img src="path_to_danish_flag.png" alt="Dansk flag"></div>
-    </header>
-
+  
+  <section class="hero"> <!-- Store billede med produkter -->
+    <div class="hero-content">
     <section class="nyheder">
         <h2>Nyheder</h2>
         <div class="carousel-container">
+          <button id="prev" class="arrow">&#9664;</button> <!-- Venstre pil -->
           <div class="carousel">
             <div class="carousel-item">
               <img src="IMG/rood.png" alt="Billede 1" class="carousel-billeder" loading="lazy">  
@@ -55,6 +49,7 @@
               <p>X,-</p>
             </div>
           </div>
+          <button id="next" class="arrow">&#9654;</button> <!-- Højre pil -->
         </div>
       </section>
 
@@ -77,6 +72,7 @@
                 <p>X,-</p>
             </div>
         </div>
+      </div>
     </section>
 
     <section class="tilbuds-banner">
@@ -84,10 +80,9 @@
     </section>
 
     <section class="maanedens-oel">
-      <h2>Månedens Øl</h2>
       <div class="maanedens-oel-container">
           <div class="maanedens-oel-tekst">
-              <h3>Månedens Øl</h3>
+              <h2>Månedens Øl</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
               <button>Læg i kurv</button>
           </div>
@@ -99,7 +94,10 @@
       <section>
           <a class="altekstfooter" >Humlevej 0, 6666 Brygløse</a> <br>
           <a class="altekstfooter">ZeroBuzzBrew@gmail.com</a> <br>
-          <a class="altekstfooter">Tlf: 12 34 56 78</a>
+          <a class="altekstfooter">Tlf: 12 34 56 78</a> <br>
+          <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></i></a>
+          <a href="https://www.reddit.com"><i class="fa-brands fa-reddit"></i></i></a>
       </section>
       <a href="index.html">
           <img id="logofooter" src="IMG/logoorange.png" alt="logoorange">
@@ -108,12 +106,12 @@
           <a href="fejl404.html" class="altekstfooter footerlinktekst">Job hos ZeroBuzz Brew</a> <br>
           <a href="fejl404.html" class="altekstfooter footerlinktekst">Reklamation og retur</a> <br>
           <a href="fejl404.html" class="altekstfooter footerlinktekst">Vores partnere</a> <br>
-          <a href="https://www.facebook.com"><img id="facebook" src="IMG/facebook.webp" alt="facebook"></a>
-          <a href="https://www.instagram.com"><img id="instagram" src="IMG/instagram.webp" alt="instagram"></a>
-          <a href="https://www.linkedin.com"><img id="linkedin" src="IMG/linkedin.webp" alt="linkedin"></a>
+          <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
       </section>
   </footer>
   
-  <script src="JS/webshop.js"></script>
+  <script src="JS/udforsk.js"></script>
 </body>
 </html>
