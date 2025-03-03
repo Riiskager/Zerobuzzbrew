@@ -27,14 +27,13 @@ header {
 .navbar {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
 #logoheader {
     width: 10vw;
     height: auto;
-    margin-left: -250px;
 }
 
 
@@ -56,26 +55,38 @@ header {
 }
 
 /*fitler/sprogknap redigering*/
-.filterknap{
+.filterknap {
     color: var(--orange);
     font-family: var(--denstore);
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: var(--hvid);
     border: none;
     display: flex;
     gap: 10px;
+    width: 120px; /* Sæt en fast bredde */
+    height: 40px;  /* Sæt en fast højde */
+    align-items: center; /* Centrerer indholdet */
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px; /* Hold padding ensartet */
 }
 
 
 .filter {
     position: relative;
     display: inline-block;
+    margin-left: 220px;
+    margin-right: 50px;
 }
 
 .filterting {
     display: none;
     position: absolute;
     z-index: 1;
+    background-color: var(--beige);
+    padding-left: 10px;
+    padding-right: 11.5px;
+    padding-bottom: 10px;
 }
 
 .flagogsprog {
@@ -93,7 +104,7 @@ header {
     color: var(--orange);
     margin-bottom: 10px;
     margin-top: 10px;
-    margin-left: 5px;
+    margin-left: 7.5px;
 }
 
 .filterknap:hover {
@@ -104,6 +115,10 @@ header {
 .filter:focus-within .filterting {
     display: block;
     font-size: 1rem;
+}
+
+.filterknap:focus-within {
+    background-color: var(--beige);
 }
 
 .filterting a:hover{
