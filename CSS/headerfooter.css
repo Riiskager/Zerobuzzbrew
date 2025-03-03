@@ -78,6 +78,13 @@ header {
     z-index: 1;
 }
 
+.flagogsprog {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: -10px;
+}
+
 .filterting a {
     text-decoration: none;
     display: block;
@@ -106,6 +113,11 @@ header {
 .fa-caret-down {
     position: relative;
     top: 5px;
+}
+
+.flag{
+    width: 20px;
+    height: auto;
 }
 
 /*footer redigering*/
