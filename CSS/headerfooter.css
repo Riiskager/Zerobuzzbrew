@@ -27,14 +27,13 @@ header {
 .navbar {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
 #logoheader {
     width: 10vw;
     height: auto;
-    margin-left: -250px;
 }
 
 
@@ -55,6 +54,86 @@ header {
     text-decoration: underline;
 }
 
+/*fitler/sprogknap redigering*/
+.filterknap {
+    color: var(--orange);
+    font-family: var(--denstore);
+    font-size: 1rem;
+    background-color: var(--hvid);
+    border: none;
+    display: flex;
+    gap: 10px;
+    width: 120px; /* Sæt en fast bredde */
+    height: 40px;  /* Sæt en fast højde */
+    align-items: center; /* Centrerer indholdet */
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px; /* Hold padding ensartet */
+}
+
+
+.filter {
+    position: relative;
+    display: inline-block;
+    margin-left: 220px;
+    margin-right: 50px;
+}
+
+.filterting {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--beige);
+    padding-left: 10px;
+    padding-right: 11.5px;
+    padding-bottom: 10px;
+}
+
+.flagogsprog {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: -10px;
+}
+
+.filterting a {
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: var(--denstore);
+    color: var(--orange);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 7.5px;
+}
+
+.filterknap:hover {
+    cursor: pointer;
+}
+
+/*viser dropdown filter når klikkes*/
+.filter:focus-within .filterting {
+    display: block;
+    font-size: 1rem;
+}
+
+.filterknap:focus-within {
+    background-color: var(--beige);
+}
+
+.filterting a:hover{
+    text-decoration: underline;
+}
+
+.fa-caret-down {
+    position: relative;
+    padding-top: 3px;
+}
+
+.flag{
+    width: 20px;
+    height: auto;
+}
 
 /*footer redigering*/
 footer{

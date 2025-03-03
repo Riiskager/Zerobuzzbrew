@@ -10,10 +10,34 @@
     <title>ZeroBuzz Brew</title>
 </head>
 <body>
-    <header>
+        <header>
+            <nav class="navbar">
+                <a href="index.html">
+                    <img id="logoheader" src="IMG/logoorange.png" alt="logoorange">
+                </a>
+                <ul class="navlist">
+                    <li><a class="navindhold" href="udforsk.html">Udforsk</a></li>
+                    <li><a class="navindhold" href="omos.html">Om os</a></li>
+                    <li><a class="navindhold" href="webshop.html">Webshop</a></li>
+                </ul>
+            </nav>
+    
+            <section>
+                <div class="filter">
+                      <button class="filterknap">Sprog
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <section class="filterting">
+                        <div class="flagogsprog"><img class="flag" src="IMG/denmark.webp" alt="danskflag"><a href="#">Dansk</a></div>
+                        <div class="flagogsprog"><img class="flag" src="IMG/unitedkingdom.webp" alt="engelskflag"><a href="#">English</a></div>
+                        <div class="flagogsprog"><img class="flag" src="IMG/germany.webp" alt="tyskflag"><a href="fejl404.html">Deutsch</a></div>
+                      </section>
+                </div>
+            </section>
+    
+        </header>
 
-
-    </header>
+    
 
     <section class="hero"> <!-- Store billede med produkter -->
         <div class="hero-content">
@@ -32,7 +56,7 @@
 
 
     <!--Mest populære oversigt-->
-    <section class="nyheder">
+    <section class="mestpopulaere">
         <h2>Mest populære</h2>
         <div class="carousel-container">
             
@@ -74,11 +98,65 @@
       </section>
 
 
+
+
+      
     <!--Slogan sektionen-->
     <section class="slogan-section">
         <h2>Zero doubt about it!</h2>
     </section>
     
+
+  <!-- IPA oversigt -->
+<section class="ipa-oversigt">
+    <h2>IPA</h2>
+    <div class="ipa-carousel-container">
+        
+      <button id="prev-ipa" class="ipa-arrow">&#9664;</button> <!-- Venstre pil -->
+      <div class="ipa-carousel">
+        <div class="ipa-carousel-item">
+          <img src="webshop-images/øl1.png" alt="Billede 1" class="ipa-billeder" loading="lazy">  
+          <p>Navn</p>
+          <p>X,-</p>
+        </div>
+        <div class="ipa-carousel-item">
+          <img src="webshop-images/øl2.png" alt="Billede 2" class="ipa-billeder" loading="lazy">
+          <p>Navn</p>
+          <p>X,-</p>
+        </div>
+        <div class="ipa-carousel-item">
+          <img src="webshop-images/øl2.png" alt="Billede 3" class="ipa-billeder" loading="lazy">
+          <p>Navn</p>
+          <p>X,-</p>
+        </div>
+        <div class="ipa-carousel-item">
+          <img src="webshop-images/øl3.png" alt="Billede 1" class="ipa-billeder" loading="lazy">
+          <p>Navn</p>
+          <p>X,-</p>
+        </div>
+        <div class="ipa-carousel-item">
+          <img src="webshop-images/øl1.png" alt="Billede 2" class="ipa-billeder" loading="lazy">
+          <p>Navn</p>
+          <p>X,-</p>
+        </div>
+        <div class="ipa-carousel-item">
+          <img src="webshop-images/øl1.png" alt="Billede 3" class="ipa-billeder" loading="lazy">
+          <p>Navn</p>
+          <p>X,-</p>
+        </div>
+      </div>
+      <button id="next-ipa" class="ipa-arrow">&#9654;</button> <!-- Højre pil -->
+    </div>
+  </section>
+
+   <!--Slogan sektionen-->
+   <section class="sammenhold-section">
+    <h2>Sammenhold er vigtigere end alkohol</h2>
+</section>
+
+
+
+
 
     <footer>
         <section>

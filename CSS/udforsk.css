@@ -28,24 +28,6 @@ body {
 }
 
 
-/* ----Nyheds produkter SEKTION---- */
-.nyheder {
-    background-color: var(--);
-    color: var(--groen);
-}
-
-.produkt-container {
-    display: flex;
-    justify-content: center;
-    gap: 150px;
-    margin: 20px 0;
-}
-
-.produkt img {
-    width: 200px;
-    height: auto;
-}
-
 /* ----CAROUSEL SEKTION---- */
 .nyheder{
     color: var(--lysgroen);
@@ -117,14 +99,16 @@ body {
     font-size: 48px;
     cursor: pointer;
     color: var(--beige);
-    background-color: var(--beige); /* Gør dem mere synlige */
     background: none;
     border: none;
-    transition: background-color 0.3s;
+    border-radius: 50%;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), color 0.5s ease;
+    z-index: 10;
 }
 
 .arrow:hover {
-    color: var(--roed);
+    transform: translateY(-50%) scale(1.5); /* Større og blødere zoom */
+    color: var(--lysblaa);
 }
 
 /* Justér pilenes placering, så de er tættere på billederne */
@@ -148,16 +132,85 @@ body {
 
 .maanedens-kasser p{
     font-size: 25px;
+    font-family: var(--denlille);
 }
 
-.maaendens-container {
+.kasse-carousel-container {
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
     display: flex;
     justify-content: center;
-    gap: 160px;
-    background-color: var(--lysblaa);
-    margin-top: 30px;
+    align-items: center;
 }
 
+.kasse-carousel-container p {
+    font-size: 25px;
+    font-family: var(--denlille);
+    color: var(--beige);
+}
+
+.kasse-carousel {
+    display: flex;
+    width: max-content;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.kasse-carousel-item {
+    flex: 0 0 auto;
+    width: 33.33%; /* Viser 3 billeder ad gangen */
+    padding: 10px; /* Afstand mellem billeder */
+    box-sizing: border-box;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kasse-carousel-item img {
+    width: 55%;
+    height: auto;
+}
+
+.kasse-carousel-item:hover {
+    transform: scale(1.05);
+}
+
+.kasse-carousel-item:hover img {
+    transform: scale(1);
+}
+
+/* Pile-knapper */
+.kasse-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 48px;
+    cursor: pointer;
+    color: var(--beige);
+    background: none;
+    border: none;
+    border-radius: 50%;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), color 0.5s ease;
+    z-index: 10;
+}
+
+.kasse-arrow:hover {
+    color: var(--roed);
+    transform: translateY(-50%) scale(1.5); /* Større og blødere zoom */
+}
+
+/* Justér pilenes placering */
+#prev-kasse {
+    left: 10px;
+}
+
+#next-kasse {
+    right: 10px;
+}
 
 /* ----Tilbud SEKTION---- */
 .tilbuds-banner{

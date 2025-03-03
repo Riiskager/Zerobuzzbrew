@@ -81,7 +81,7 @@
 
 /*produkt sektion*/
 
-.nyheder h2{
+.mestpopulaere h2{
     color: var(--beige);
     margin-top: 50px;
     font-size: 40px;
@@ -191,3 +191,109 @@
      
     }
     
+
+
+
+ /* IPA sektion */
+.ipa-oversigt h2 {
+    color: var(--beige);
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: var(--denstore);
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: var(--roed);
+    margin: 0;
+    padding: 0;
+}
+
+.ipa-carousel-container {
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--roed);
+}
+
+.ipa-carousel-container p {
+    font-size: 25px;
+    font-family: var(--denlille);
+    color: var(--beige);
+}
+
+.ipa-carousel {
+    display: flex;
+    width: max-content;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.ipa-carousel-item {
+    flex: 0 0 auto;
+    width: 33.33%; /* Viser 3 billeder ad gangen */
+    padding: 10px; /* Afstand mellem billeder */
+    box-sizing: border-box;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ipa-carousel-item img {
+    width: 55%;
+    height: auto;
+}
+
+.ipa-carousel-item:hover {
+    transform: scale(1.05);
+}
+
+.ipa-carousel-item:hover img {
+    transform: scale(1);
+}
+
+/* Pile-knapper */
+.ipa-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 48px;
+    cursor: pointer;
+    color: var(--beige);
+    background: none;
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
+
+.ipa-arrow:hover {
+    color: var(--lysgul);
+}
+
+/* Justér pilenes placering */
+#prev-ipa {
+    left: 10px;
+}
+
+#next-ipa {
+    right: 10px;
+}
+
+
+   
+
+/*Slogan sektion*/
+.sammenhold-section h2 {
+    background-color: var(--lysgroen); /* En farve, der matcher designet */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--hvid);
+    font-family: var(--denstore);
+ 
+}
