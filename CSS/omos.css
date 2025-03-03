@@ -1,0 +1,69 @@
+:root {
+    --groen: #616D38;
+    --lysgroen: #B79F39;
+    --roed: #C34C27;
+    --orange: #BC6C29;
+    --moerkblaa: #183A37;
+    --lysblaa: #2E776E;
+    --beige: #EFD6AC;
+    --hvid: #FCF2E5; 
+
+    --denlille: "serenity", sans-serif;
+    --denstore: "noka", sans-serif;
+}
+
+header {
+    background-image: url("../IMG/cheers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    background-color: var(--beige);
+}
+
+.linje1{
+    border-top: 4px solid var(--roed);
+    width: 30%;
+    z-index: 1;
+    padding-top: -100px;
+    margin-top: 40px;
+    margin-bottom: -80px;
+}
+
+.linje2 {
+    border-bottom: 4px solid var(--roed);
+    width: 30%;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 75%;
+    transform: translateY(-50%);
+}
+
+
+.mission{
+    background-color: var(--beige);
+}
+
+.mission h2{
+    font-family: var(--denstore);
+    text-align: center;
+    color: var(--roed);
+    font-size: 3vw;
+    padding-top : 30px;
+}
+
+.mission p{
+    color: var(--orange);
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
+    font-family: var(--denlille);
+    font-size: 1.5vw;
+    padding-bottom: 70px;
+}
+
+
+
