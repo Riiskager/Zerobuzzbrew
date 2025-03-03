@@ -55,6 +55,58 @@ header {
     text-decoration: underline;
 }
 
+/*fitler/sprogknap redigering*/
+.filterknap{
+    color: var(--orange);
+    font-family: var(--denstore);
+    font-size: 1.5rem;
+    background-color: var(--hvid);
+    border: none;
+    display: flex;
+    gap: 10px;
+}
+
+
+.filter {
+    position: relative;
+    display: inline-block;
+}
+
+.filterting {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.filterting a {
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: var(--denstore);
+    color: var(--orange);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.filterknap:hover {
+    cursor: pointer;
+}
+
+/*viser dropdown filter når klikkes*/
+.filter:focus-within .filterting {
+    display: block;
+    font-size: 1rem;
+}
+
+.filterting a:hover{
+    text-decoration: underline;
+}
+
+.fa-caret-down {
+    position: relative;
+    top: 5px;
+}
 
 /*footer redigering*/
 footer{

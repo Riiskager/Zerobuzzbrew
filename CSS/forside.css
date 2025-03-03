@@ -36,14 +36,15 @@ body{
 body, h1{
     font-family: var(--denstore);
     color: var(--roed);
+    padding-bottom: 20px;
 }
 body, p{
     font-family: var(--denlille);
-    color: var(--lysblaa);
+    color: var(--roed);
+    padding-bottom: 40px;
 }
 header{
     width: 100%;
-    border: 2px solid black;
 }
 header, video{
     width: 100%;
@@ -53,7 +54,6 @@ header, video{
     margin: 10px 20px 20px 20px;
     display: flex;
     justify-content: space-between;
-    border: 5px solid var(--groen);
     font-size: xx-large;
 }
 .købnu{
@@ -73,9 +73,10 @@ header, video{
     background-color: var(--orange);
 
 }
-.text{
+#maanedens, .text{
     display: flex;
     justify-content: center;
+    padding: 30px;
 }
 #maanedens, h1{
     display: flex;
@@ -85,11 +86,19 @@ header, video{
 #maanedens, p{
     display: flex;
     justify-content: center;
+    text-decoration: none;
+}
+
+.linje{
+    border-top: 4px solid var(--roed);
+    width: 300px;
+    z-index: 1;
+    margin-top: 20px;
 }
 
 #billede{
     border: 5px solid var(--lysblaa);
-    min-width: 50%;
+    min-width: 40%;
 }
 
 
