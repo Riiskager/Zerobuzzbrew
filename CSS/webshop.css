@@ -21,10 +21,35 @@
 }
 
     body{
-        background-color: var(--lysblaa)
+        background-color: var(--hvid)
+    }
+
+
+    .breadcrumbs {
+        font-size: 2vw;
+        font-family: var(--denlille);
+        color: var(--beige);
+        margin-top: 10px;
+        margin-left: 50px;
+
     }
     
-
+    .breadcrumbs a {
+        text-decoration: none;
+        color: var(--beige);
+        font-weight: 500;
+    }
+    
+    .breadcrumbs a:hover {
+        text-decoration: underline;
+    }
+    
+    .breadcrumbs .active {
+        text-decoration: underline;
+    }
+    
+    
+/*Store billede øverst*/
     .hero {
         position: relative;
         width: 100vw;
@@ -35,6 +60,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-bottom: -50px;
     }
 
 
@@ -42,6 +68,8 @@
         padding: 0;
         margin: 0;
         text-align: center; /* Centrerer menuen */
+        
+        
     }
     
     .categories li {
@@ -53,7 +81,7 @@
     .categories li a {
         color: var(--roed); 
         text-decoration: none;
-        font-size: 25px; /* Justér efter behov */
+        font-size: 3vw; /* Justér efter behov */
         font-family: var(--denstore);
         position: relative;
       padding-bottom: 5px;
@@ -84,15 +112,19 @@
 .mestpopulaere h2{
     color: var(--beige);
     margin-top: 50px;
-    font-size: 40px;
+    font-size: 3vw;
     font-family: var(--denstore);
     margin-bottom: 30px;
     text-align: center;
     background-color: var(--lysblaa);
+    margin-bottom: -40px;
+    padding: 50px 0;
+    text-decoration: underline;
 }
 
 .carousel-container {
-    margin-top: 50px;
+    
+    margin-top: 0px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -100,10 +132,11 @@
     justify-content: center;
     align-items: center;
     background-color: var(--lysblaa);
+   
 }
 
 .carousel-container p{
-    font-size: 25px;
+    font-size: 2.5vw;
     font-family: var(--denlille);
     color: var(--beige);
     
@@ -116,7 +149,17 @@
     scroll-snap-type: x mandatory;
     overflow-x: auto;
     scroll-behavior: smooth;
-}
+
+        /* Skjuler scrollbar på forskellige browsere */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer & Edge */
+    }
+    
+    .carousel::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+    
+
 
 .carousel-item {
     flex: 0 0 auto;
@@ -181,30 +224,35 @@
 }
 
 /*Slogan sektion*/
-    .slogan-section h2 {
-        background-color: #E16F3D; /* En farve, der matcher designet */
-        padding: 20px;
-        text-align: center;
-        font-size: 24px;
-        color: var(--hvid);
-        font-family: var(--denstore);
-     
-    }
-    
+.banner {
+    background-color: var(--orange);
+    color: var(--hvid);
+    font-family: var(--denlille);
+    font-size: xx-large;
+    padding: 20px 0; /* Mindre padding for at gøre det pænere */
+    white-space: nowrap; /* Sørger for, at teksten ikke bryder linjen */
+}
 
+.banner span {
+    display: inline-block;
+    margin-right: 30px; /* Justerer afstanden mellem ordene */
+}
 
 
  /* IPA sektion */
 .ipa-oversigt h2 {
     color: var(--beige);
     margin-top: 50px;
-    font-size: 40px;
+    font-size: 3vw;
     font-family: var(--denstore);
     margin-bottom: 30px;
     text-align: center;
     background-color: var(--roed);
     margin: 0;
-    padding: 0;
+    margin-bottom: -60px;
+    text-decoration: underline;
+    padding: 30px 0;
+    
 }
 
 .ipa-carousel-container {
@@ -219,7 +267,7 @@
 }
 
 .ipa-carousel-container p {
-    font-size: 25px;
+    font-size: 2.5vw;
     font-family: var(--denlille);
     color: var(--beige);
 }
@@ -230,7 +278,17 @@
     scroll-snap-type: x mandatory;
     overflow-x: auto;
     scroll-behavior: smooth;
-}
+
+        /* Skjuler scrollbar på forskellige browsere */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer & Edge */
+    }
+    
+    .carouselscrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+    
+
 
 .ipa-carousel-item {
     flex: 0 0 auto;
@@ -272,7 +330,7 @@
 }
 
 .ipa-arrow:hover {
-    color: var(--lysgul);
+    color: var(--orange);
 }
 
 /* Justér pilenes placering */
@@ -286,14 +344,18 @@
 
 
    
-
 /*Slogan sektion*/
-.sammenhold-section h2 {
-    background-color: var(--lysgroen); /* En farve, der matcher designet */
-    padding: 20px;
-    text-align: center;
-    font-size: 24px;
+.sammenhold {
+    background-color: var(--orange);
     color: var(--hvid);
-    font-family: var(--denstore);
- 
+    font-family: var(--denlille);
+    font-size: xx-large;
+    padding: 20px 0; /* Mindre padding for at gøre det pænere */
+    white-space: nowrap; /* Sørger for, at teksten ikke bryder linjen */
 }
+
+.sammenhold span {
+    display: inline-block;
+    margin-right: 30px; /* Justerer afstanden mellem ordene */
+}
+
