@@ -18,6 +18,30 @@ header {
     background-size: cover;
 }
 
+body{
+    background-color: var(--beige);
+}
+
+.linje1{
+    border-top: 4px solid var(--roed);
+    width: 30%;
+    z-index: 1;
+    padding-top: -100px;
+    margin-top: 40px;
+    margin-bottom: -80px;
+}
+
+.linje2 {
+    border-bottom: 4px solid var(--roed);
+    width: 30%;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 75%;
+    transform: translateY(-50%);
+}
+
+
 .mission{
     background-color: var(--beige);
 }
@@ -38,7 +62,7 @@ header {
     align-content: center;
     font-family: var(--denlille);
     font-size: 1.5vw;
-    padding-bottom: 30px;
+    padding-bottom: 70px;
 }
 
 
