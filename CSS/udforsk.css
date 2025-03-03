@@ -22,11 +22,8 @@ body {
     font-family: var(--denlille);
     text-align: center;
     position: relative;
-
-}
-
-.header{
     background-color: var(--hvid);
+
 }
 
 .hero {
@@ -41,7 +38,7 @@ body {
 .nyheder{
     color: var(--lysgroen);
     margin-top: 50px;
-    font-size: 35px;
+    font-size: 3vw;
     margin-bottom: 30px;
     font-family: var(--denstore);
 }
@@ -57,7 +54,7 @@ body {
 }
 
 .carousel-container p{
-    font-size: 25px;
+    font-size: 1.5vw;
     font-family: var(--denlille);
 }
 
@@ -142,7 +139,7 @@ body {
 .maanedens-kasser{
     background-color: var(--lysblaa);
     color: var(--beige);
-    font-size: 30px;
+    font-size: 3vw;
     padding: 40px;
     font-family: var(--denstore);
 }
@@ -163,7 +160,7 @@ body {
 }
 
 .kasse-carousel-container p {
-    font-size: 25px;
+    font-size: 1.5vw;
     font-family: var(--denlille);
 }
 
@@ -236,21 +233,16 @@ body {
     right: 10px;
 }
 
-/* ----Tilbud SEKTION---- */
-.tilbuds-banner{
-    display: flex;
-    height: 100px;
-    justify-content: center;
+/* ----Tilbud banner SEKTION---- */
+.banner{
     background-color: var(--orange);
-}
-
-.tilbuds-banner h1{
     color: var(--hvid);
+    display: flex;
+    flex-wrap: nowrap;
     font-family: var(--denlille);
-    margin-top: 30px;
-    font-size: 30px;
+    font-size: xx-large;
+    padding: 40px 0;
 }
-
 
 /* ----Månedens øl SEKTION---- */
 .maanedens-oel-container {
@@ -265,7 +257,7 @@ body {
 
 .maanedens-oel h2 {
     padding: 40px;
-    font-size: 50px;
+    font-size: 3vw;
     color: var(--hvid);
     background-color: var(--lysgroen);
 }
