@@ -1,3 +1,4 @@
+/*variabler*/
 :root {
     --groen: #616D38;
     --lysgroen: #B79F39;
@@ -12,6 +13,7 @@
     --denstore: "noka", sans-serif;
 }
 
+/*header redigering*/
 header {
     background-image: url("../IMG/cheers.jpg");
     background-repeat: no-repeat;
@@ -22,6 +24,7 @@ body{
     background-color: var(--beige);
 }
 
+/*Breadcrumbs redigering*/
 .hvorerdu{
     display: flex;
     font-family: var(--denlille);
@@ -49,6 +52,7 @@ body{
     padding-left: 5px;
 }
 
+/*Sektion 1 redigering*/
 .linje1{
     border-top: 4px solid var(--roed);
     width: 30%;
@@ -67,7 +71,6 @@ body{
     top: 80%;
     transform: translateY(-50%);
 }
-
 
 .mission{
     background-color: var(--beige);
@@ -92,5 +95,45 @@ body{
     padding-bottom: 70px;
 }
 
+/*Sektion 2 redigering*/
+.vision {
+    background-color: var(--lysgroen);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pushes content apart */
+    gap: 3vw;
+}
 
+.vision-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.vision h2 {
+    font-family: var(--denstore);
+    color: var(--orange);
+    font-size: 3vw;
+    padding-left: 5%;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.vision p {
+    color: var(--hvid);
+    font-family: var(--denlille);
+    font-size: 1.5vw;
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 5%;
+}
+
+.vision img {
+    height: 600px;
+    width: auto;
+    align-self: flex-end; /* Moves the image to the bottom */
+}
+
+
+/*Sektion 3 redigering*/
 
