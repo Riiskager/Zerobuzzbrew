@@ -127,7 +127,7 @@ header {
 
 .fa-caret-down {
     position: relative;
-    top: 5px;
+    padding-top: 3px;
 }
 
 .flag{
