@@ -224,15 +224,21 @@
 }
 
 /*Slogan sektion*/
-    .slogan-section h2 {
-        background-color: #E16F3D; /* En farve, der matcher designet */
-        padding: 20px;
-        text-align: center;
-        font-size: 3vw;
-        color: var(--hvid);
-        font-family: var(--denstore);
-     
-    }
+.banner {
+    background-color: var(--orange);
+    color: var(--hvid);
+    font-family: var(--denlille);
+    font-size: xx-large;
+    padding: 20px 0; /* Mindre padding for at gøre det pænere */
+    white-space: nowrap; /* Sørger for, at teksten ikke bryder linjen */
+}
+
+.banner span {
+    display: inline-block;
+    margin-right: 30px; /* Justerer afstanden mellem ordene */
+}
+
+
     
 
 
