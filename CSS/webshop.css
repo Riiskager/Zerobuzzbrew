@@ -74,6 +74,8 @@
     transform: scaleX(1);
 }
 
+/*produkt sektion*/
+
     .popular-products {
         background-color: var(--lysblaa); /* Blå sektion */
         padding: 40px 0;
