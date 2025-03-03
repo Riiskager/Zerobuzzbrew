@@ -204,7 +204,7 @@
     text-align: center;
     background-color: var(--roed);
     margin: 0;
-    padding: 0;
+    margin-bottom: -50px;
 }
 
 .ipa-carousel-container {
