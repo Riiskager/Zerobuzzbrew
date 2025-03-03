@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --groen: #616D38;
+    --lysgroen: #B79F39;
+    --roed: #C34C27;
+    --orange: #BC6C29;
+    --moerkblaa: #183A37;
+    --lysblaa: #2E776E;
+    --beige: #EFD6AC;
+    --hvid: #FCF2E5;
+
+--denlille: "serenity", sans-serif;
+--denstore: "noka", sans-serif;
+}
+h1{
+    font-family: var(--denstore);
+}
+p{
+    font-family: var(--denlille);
+}
+body{
+    background-color: var(--hvid);
+}
+
+.header2{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--beige);
+    color: var(--orange);
+    font-family: var(--denlille);
+    font-size: large;
+}
+
+.bajeren{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 250px;
+}
+.dethele{
+    display: block;
+    color: var(--orange);
+}
+
+.overskrift{
+    display: flex;
+    color: var(--lysblaa);
+}
+#overskrift{
+    margin-right: 20px;
+    font-size: 50px;
+}
+
+#pris{
+    font-size: 70px;
+}
+.broedtekst{
+    max-width: 400px;
+    font-size: 20px;
+    padding: 10px 0 20px 0;
+}
+.knapper, #antal{
+    color: var(--orange);
+    background: none;
+    border-radius: 15px;
+    border-color: var(--orange);
+    font-size: 20px;
+    padding: 10px;
+}
+#antal:hover{
+    color: var(--hvid);
+    background-color: var(--orange);
+}
+
+
+.kurvknap{
+    background-color: var(--orange);
+    color: var(--hvid);
+    border-radius: 15px;
+    border-color: var(--orange);
+    font-size: 20px;
+    padding: 10px;
+}
