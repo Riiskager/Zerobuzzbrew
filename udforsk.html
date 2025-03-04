@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/sth5zld.css"> <!--Font link-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ZeroBuzz Brew</title> 
+    <link rel="stylesheet" href="https://use.typekit.net/sth5zld.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="CSS/udforsk.css">
     <link rel="stylesheet" href="CSS/headerfooter.css">
-    <title>ZeroBuzz Brew</title>
-</head>
+  </head>
+  
 <body>
   <header>
     <nav class="navbar">
@@ -22,19 +23,19 @@
         </ul>
     </nav>
 
-    <section>
-        <div class="filter">
-              <button class="filterknap">Sprog
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <section class="filterting">
-                <div class="flagogsprog"><img class="flag" src="IMG/denmark.webp" alt="danskflag"><a href="#">Dansk</a></div>
-                <div class="flagogsprog"><img class="flag" src="IMG/unitedkingdom.webp" alt="engelskflag"><a href="#">English</a></div>
-                <div class="flagogsprog"><img class="flag" src="IMG/germany.webp" alt="tyskflag"><a href="fejl404.html">Deutsch</a></div>
-              </section>
-        </div>
-    </section>
-</header>
+    <div>
+      <div class="filter">
+            <button class="filterknap">Sprog
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="filterting">
+              <div class="flagogsprog"><img class="flag" src="IMG/denmark.webp" alt="danskflag"><a href="#">Dansk</a></div>
+              <div class="flagogsprog"><img class="flag" src="IMG/unitedkingdom.webp" alt="engelskflag"><a href="#">English</a></div>
+              <div class="flagogsprog"><img class="flag" src="IMG/germany.webp" alt="tyskflag"><a href="fejl404.html">Deutsch</a></div>
+            </div>
+      </div>
+  </div>
+  </header>
 
 <nav class="breadcrumbs">
   <a href="index.html">Forside</a> >
@@ -51,7 +52,7 @@
           <div class="carousel">
             <div class="carousel-item">
               <div class="shopping-cart-icon">
-                <img src="IMG/shoppingcart-orange.png" alt="Cart">
+                <img src="IMG/cart.png" alt="Cart">
             </div>
               <img src="IMG/rood.png" alt="Billede 1" class="carousel-billeder" loading="lazy">  
               <p>Navn</p>
@@ -59,7 +60,7 @@
             </div>
             <div class="carousel-item">
               <div class="shopping-cart-icon">
-                <img src="IMG/shoppingcart-orange.png" alt="Cart">
+                <img src="IMG/cart.png" alt="Cart">
             </div>
               <img src="IMG/graan.png" alt="Billede 2" class="carousel-billeder" loading="lazy">
               <p>Navn</p>
@@ -67,23 +68,32 @@
             </div>
             <div class="carousel-item">
               <div class="shopping-cart-icon">
-                <img src="IMG/shoppingcart-white.png" alt="Cart">
+                <img src="IMG/cart.png" alt="Cart">
             </div>
               <img src="IMG/blaa.png" alt="Billede 3" class="carousel-billeder" loading="lazy">
               <p>Navn</p>
               <p class="pris">X,-</p>
             </div>
             <div class="carousel-item">
+              <div class="shopping-cart-icon">
+                <img src="IMG/cart.png" alt="Cart">
+            </div>
               <img src="IMG/rood.png" alt="Billede 1" class="carousel-billeder" loading="lazy">
               <p>Navn</p>
               <p class="pris">X,-</p>
             </div>
             <div class="carousel-item">
+              <div class="shopping-cart-icon">
+                <img src="IMG/cart.png" alt="Cart">
+            </div>
               <img src="IMG/graan.png" alt="Billede 2" class="carousel-billeder" loading="lazy">
               <p>Navn</p>
               <p class="pris">X,-</p>
             </div>
             <div class="carousel-item">
+              <div class="shopping-cart-icon">
+                <img src="IMG/cart.png" alt="Cart">
+            </div>
               <img src="IMG/blaa.png" alt="Billede 3" class="carousel-billeder" loading="lazy">
               <p>Navn</p>
               <p class="pris">X,-</p>
@@ -135,34 +145,34 @@
     </section>
 
   <!--Tilbud sektionen-->
-  <section class="tilbud-section">
+  <div class="tilbud-section">
     <div class="banner">
         <div class="banner-content">
-            <span> VILDE TILBUDS </span>
-            <span> &bull; </span>
-            <span> SPAR 50% </span>
-            <span> &bull; </span>
-            <span> VILDE TILBUDS </span>
-            <span> &bull; </span>
-            <span> SPAR 50% </span>
-            <span> &bull; </span>
-            <span> VILDE TILBUDS </span>
-            <span> &bull; </span>
-
-            <!-- Dupliceret tekst for uendelig effekt -->
-            <span> VILDE TILBUDS </span>
-            <span> &bull; </span>
-            <span> SPAR 50% </span>
-            <span> &bull; </span>
-            <span> VILDE TILBUDS </span>
-            <span> &bull; </span>
-            <span> SPAR 50% </span>
-            <span> &bull; </span>
-            <span> VILDE TILBUDS </span>
-            <span> &bull; </span>
-        </div>
-    </div>
-</section>
+                      <span> VILDE TILBUDS </span>
+                      <span> &bull; </span>
+                      <span> SPAR 50% </span>
+                      <span> &bull; </span>
+                      <span> VILDE TILBUDS </span>
+                      <span> &bull; </span>
+                      <span> SPAR 50% </span>
+                      <span> &bull; </span>
+                      <span> VILDE TILBUDS </span>
+                      <span> &bull; </span>
+          
+                      <!-- Dupliceret tekst for uendelig effekt -->
+                      <span> VILDE TILBUDS </span>
+                      <span> &bull; </span>
+                      <span> SPAR 50% </span>
+                      <span> &bull; </span>
+                      <span> VILDE TILBUDS </span>
+                      <span> &bull; </span>
+                      <span> SPAR 50% </span>
+                      <span> &bull; </span>
+                      <span> VILDE TILBUDS </span>
+                      <span> &bull; </span>
+                  </div>
+              </div>
+            </div>
 
     <section class="maanedens-oel">
       <div class="maanedens-oel-container">
@@ -179,26 +189,26 @@
 
     <footer>
       <section>
-          <a class="altekstfooter" >Humlevej 0, 6666 Brygløse</a> <br>
-          <a class="altekstfooter">ZeroBuzzBrew@gmail.com</a> <br>
-          <a class="altekstfooter">Tlf: 12 34 56 78</a> <br>
+          <h2 class="altekstfooter" >Humlevej 0, 6666 Brygløse</h2> <br>
+          <h2 class="altekstfooter">ZeroBuzzBrew@gmail.com</h2> <br>
+          <h2 class="altekstfooter">Tlf: 12 34 56 78</h2> <br>
           <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
-          <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></i></a>
-          <a href="https://www.reddit.com"><i class="fa-brands fa-reddit"></i></i></a>
+          <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.reddit.com"><i class="fa-brands fa-reddit"></i></a>
       </section>
       <a href="index.html">
           <img id="logofooter" src="IMG/logoorange.png" alt="logoorange">
       </a> 
-      <section>
+      <div>
           <a href="fejl404.html" class="altekstfooter footerlinktekst">Job hos ZeroBuzz Brew</a> <br>
           <a href="fejl404.html" class="altekstfooter footerlinktekst">Reklamation og retur</a> <br>
           <a href="fejl404.html" class="altekstfooter footerlinktekst">Vores partnere</a> <br>
           <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
           <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
-      </section>
+      </div>
   </footer>
-  
+
   <script src="JS/udforsk.js"></script>
 </body>
 </html>
