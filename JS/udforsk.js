@@ -31,3 +31,4 @@ if (ipaCarousel && prevIpaBtn && nextIpaBtn) {
         ipaCarousel.scrollBy({ left: -scrollStepIpa, behavior: "smooth" });
     });
 }
+
