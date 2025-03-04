@@ -76,15 +76,11 @@ body {
 }
 
 /* ----SHOPPINGCART SEKTION---- */
-.carousel-item {
-    position: relative; /* Gør det muligt at placere ikonet korrekt */
-}
-
 .shopping-cart-icon {
     position: absolute;
-    top: -10px;
-    margin-left: 50px;
-    z-index: 1000; /* Sørger for, at ikonet ikke forsvinder bag billedet */
+    top: 10px;
+    margin-left: 250px;
+    z-index: 10; /* Sørger for, at ikonet ikke forsvinder bag billedet */
 }
 
 .shopping-cart-icon img {
@@ -141,6 +137,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     transition: transform 0.2s ease-in-out; /* Hurtigere overgang */
 }
 
