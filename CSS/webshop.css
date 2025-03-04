@@ -125,6 +125,7 @@
 .carousel-container {
     
     margin-top: 0px;
+   
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -132,6 +133,7 @@
     justify-content: center;
     align-items: center;
     background-color: var(--lysblaa);
+    
    
 }
 
@@ -141,6 +143,24 @@
     color: var(--beige);
     
 }
+
+
+/* PRIS SEKTION*/
+.pris {
+    display: inline-block; /* Sørger for, at border kan strækkes */
+    position: relative; /* Gør det muligt at placere en længere linje */
+}
+
+.pris::after {
+    content: ""; /* Opretter en pseudo-element til linjen */
+    position: absolute;
+    left: -25px;
+    bottom: -8px; /* Juster afstanden fra teksten */
+    width: 70px; /* Gør linjen længere */
+    height: 2px; /* Tykkelsen af linjen */
+    background-color: var(--beige)
+}
+   
 
 
 .carousel {
@@ -223,19 +243,39 @@
     right: 10px; /* Flyt længere ind */
 }
 
-/*Slogan sektion*/
+/*TILBUDSBANNER SEKTION*/
+.tilbud-section {
+    padding: 0px;
+    overflow: hidden;
+    border-bottom: 4px solid var(--hvid);
+}
+
 .banner {
     background-color: var(--orange);
     color: var(--hvid);
-    font-family: var(--denlille);
+    font-family: var(--denstore);
     font-size: xx-large;
-    padding: 20px 0; /* Mindre padding for at gøre det pænere */
-    white-space: nowrap; /* Sørger for, at teksten ikke bryder linjen */
+    padding: 30px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    display: flex;
 }
 
-.banner span {
-    display: inline-block;
-    margin-right: 30px; /* Justerer afstanden mellem ordene */
+.banner-content {
+    display: flex;
+    gap: 30px; /* Justerer afstanden mellem elementer */
+    min-width: 200%; /* Sørger for at dække hele skærmen to gange */
+    animation: scrollText 15s linear infinite;
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%); /* Halvdelen af teksten forsvinder, men den er duplikeret */
+    }
 }
 
 
@@ -345,17 +385,31 @@
 
    
 /*Slogan sektion*/
+
 .sammenhold {
     background-color: var(--orange);
     color: var(--hvid);
-    font-family: var(--denlille);
+    font-family: var(--denstore);
     font-size: xx-large;
-    padding: 20px 0; /* Mindre padding for at gøre det pænere */
-    white-space: nowrap; /* Sørger for, at teksten ikke bryder linjen */
+    padding: 30px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    display: flex;
 }
 
-.sammenhold span {
-    display: inline-block;
-    margin-right: 30px; /* Justerer afstanden mellem ordene */
+.sammenhold {
+    display: flex;
+    gap: 30px; /* Justerer afstanden mellem elementer */
+    min-width: 200%; /* Sørger for at dække hele skærmen to gange */
+    animation: scrollText 35s linear infinite;
 }
 
+@keyframes scrollText {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%); /* Halvdelen af teksten forsvinder, men den er duplikeret */
+    }
+}

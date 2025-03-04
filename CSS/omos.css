@@ -18,6 +18,32 @@ header {
     background-image: url("../IMG/omoshero.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 800px;
+    position: relative;
+    display: flex;
+    align-items: flex-start; 
+    padding: 20px;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.navlist {
+    display: flex;
+    list-style: none;
+}
+
+.filter {
+    position: absolute;
+    top: 90px;
+    right: 20px;
 }
 
 body{
@@ -68,7 +94,7 @@ body{
     z-index: 1;
     position: absolute;
     right: 0;
-    top: 80%;
+    top: 173%;
     transform: translateY(-50%);
 }
 
@@ -123,7 +149,7 @@ body{
     color: var(--hvid);
     font-family: var(--denlille);
     font-size: 1.5vw;
-    text-align: center;
+    text-align:center;
     margin-top: 10px;
     padding-left: 5%;
 }
