@@ -96,7 +96,7 @@ body {
 
 /* ----CAROUSEL STARTER---- */
 .carousel-container {
-    margin-top: 50px;
+    margin-top: 100px;
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -393,7 +393,7 @@ body {
 }
 
 .maanedens-oel-container img {
-    width: 260px; 
+    width: 400px; 
     height: auto;
     transform: scale(1.05); /* Standard størrelse */
     margin-left: 30px;
