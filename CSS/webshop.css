@@ -71,7 +71,7 @@
         display: block;
     }
     
- 
+
 
     .categories ul {
         padding: 0;
@@ -85,6 +85,7 @@
         display: inline-block; /* Gør dem på linje */
         margin: 20px 30px 50px 30px; /* Top, højre, bund, venstre */
         position: relative;
+        padding-top: 20px;
     }
     
     .categories li a {
@@ -93,7 +94,9 @@
         font-size: 2.5vw; 
         font-family: var(--denstore);
         position: relative;
-      padding-bottom: 5px;
+      
+      
+      
       
     }
     
@@ -132,7 +135,7 @@
     cursor: pointer;
     position: absolute; /* Eller 'fixed' hvis det skal følge med ved scroll */
     left: 10px; /* Rykker det lidt væk fra venstre kant */
-    top: 500px; /* Justér for at placere det længere nede */
+    top: 700px; /* Justér for at placere det længere nede */
 }
 
 .ikon-kurv {
@@ -140,7 +143,7 @@
     cursor: pointer;
     position: absolute;
     right: 10px; /* Holder den i højre side */
-    top: 500px; /* Rykker den længere ned */
+    top: 700px; /* Rykker den længere ned */
 }
 
 .ikon-search {
@@ -148,7 +151,7 @@
     cursor: pointer;
     position: absolute;
     right: 50px; /* Placeres ved siden af kurven */
-    top: 500px; /* Matcher kurvens højde */
+    top: 700px; /* Matcher kurvens højde */
 }
 
 
@@ -168,11 +171,12 @@
     padding: 50px 0;
     text-decoration: underline;
     text-underline-offset: 10px;
+    
 }
 
 .carousel-container {
     
-    margin-top: 0px;
+    margin-top: 20px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -189,6 +193,7 @@
     font-size: 2.5vw;
     font-family: var(--denlille);
     color: var(--beige);
+    margin-top: 10px;
     
 }
 
@@ -362,6 +367,7 @@
     font-family: var(--denlille);
     color: var(--beige);
     text-align: center;
+    margin-top: 10px;
 }
 
 .ipa-carousel {
