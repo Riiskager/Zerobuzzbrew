@@ -20,7 +20,7 @@
 
 /*header redigering*/
 header {
-    background-image: url("../IMG/omoshero.webp");
+    background-image: linear-gradient(to bottom, var(--moerkblaa) 0%, rgba(5, 3, 0, 0) 50%, rgba(24, 58, 55, 0) 100%), url("../IMG/omoshero.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
@@ -28,6 +28,7 @@ header {
     display: flex;
     align-items: flex-start;
 }
+
 
 .navbar {
     position: absolute;
