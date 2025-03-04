@@ -50,7 +50,7 @@
     
     
 /*Store billede øverst*/
-    .hero {
+    .hero-content {
         position: relative;
         width: 100vw;
         height: 550px; 
@@ -60,16 +60,24 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-bottom: -50px;
+        margin-bottom: -170px;
     }
 
+  
+    
+    .hero-content img.hero-image {
+        max-width: 400px;
+        height: auto;
+        display: block;
+    }
+    
  
 
     .categories ul {
         padding: 0;
         margin: 0;
         text-align: center; 
-        
+        margin-top: 60px;
         
     }
     
@@ -86,6 +94,7 @@
         font-family: var(--denstore);
         position: relative;
       padding-bottom: 5px;
+      
     }
     
 
@@ -164,7 +173,6 @@
 .carousel-container {
     
     margin-top: 0px;
-   
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -172,6 +180,7 @@
     justify-content: center;
     align-items: center;
     background-color: var(--lysblaa);
+    
     
    
 }
@@ -229,6 +238,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  
 }
 
 .carousel-item img {
@@ -350,6 +361,7 @@
     font-size: 2.5vw;
     font-family: var(--denlille);
     color: var(--beige);
+    text-align: center;
 }
 
 .ipa-carousel {
@@ -379,6 +391,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .ipa-carousel-item img {
