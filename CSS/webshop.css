@@ -53,7 +53,7 @@
     .hero {
         position: relative;
         width: 100vw;
-        height: 550px; /* Justér efter behov */
+        height: 550px; 
         background: linear-gradient(165deg, #FCF2E5 50%, #B79F39 50%);
 
         display: flex;
@@ -67,7 +67,7 @@
     .categories ul {
         padding: 0;
         margin: 0;
-        text-align: center; /* Centrerer menuen */
+        text-align: center; 
         
         
     }
@@ -81,7 +81,7 @@
     .categories li a {
         color: var(--roed); 
         text-decoration: none;
-        font-size: 3vw; /* Justér efter behov */
+        font-size: 3vw; 
         font-family: var(--denstore);
         position: relative;
       padding-bottom: 5px;
@@ -147,17 +147,17 @@
 
 /* PRIS SEKTION*/
 .pris {
-    display: inline-block; /* Sørger for, at border kan strækkes */
-    position: relative; /* Gør det muligt at placere en længere linje */
+    display: inline-block; 
+    position: relative; 
 }
 
 .pris::after {
     content: ""; /* Opretter en pseudo-element til linjen */
     position: absolute;
     left: -25px;
-    bottom: -8px; /* Juster afstanden fra teksten */
-    width: 70px; /* Gør linjen længere */
-    height: 2px; /* Tykkelsen af linjen */
+    bottom: -8px; 
+    width: 70px; 
+    height: 2px; 
     background-color: var(--beige)
 }
    
@@ -171,12 +171,12 @@
     scroll-behavior: smooth;
 
         /* Skjuler scrollbar på forskellige browsere */
-        scrollbar-width: none; /* Firefox */
-        -ms-overflow-style: none; /* Internet Explorer & Edge */
+        scrollbar-width: none; 
+        -ms-overflow-style: none; 
     }
     
     .carousel::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, Opera */
+        display: none; 
     }
     
 
@@ -198,7 +198,7 @@
 }
 
 .carousel-item:hover {
-    transform: scale(1.05); /* Forstørrer artiklen lidt */
+    transform: scale(1.05); 
   }
 
   .carousel-item:hover img {
