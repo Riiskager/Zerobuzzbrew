@@ -41,17 +41,19 @@ body{
 }
 
 
-body, h1{
+body h1{
     font-family: var(--denstore);
     color: var(--roed);
     padding-bottom: 20px;
 }
 
 
-#maanedens, p{
+#maanedens p{
     font-family: var(--denlille);
     color: var(--roed);
     padding-bottom: 40px;
+    font-size: 25px;
+    max-width: 500px;
 }
 
 
@@ -62,11 +64,35 @@ header{
 }
 
 
-header, video{
+header video{
     display: block;
     width: 100%;
+    position: relative;
+}
+header .pil{
+    align-self: center;
+    top: 100%;
+    animation-name: pil;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    opacity: 70%;
 }
 
+@keyframes pil{
+    from{
+        top: 80%;
+    }
+    to{
+        top: 112%;
+    }
+}
+
+.pil{
+    position: absolute;
+    z-index: 2;
+    font-size: 100px;
+    color: var(--beige);
+}
 
 #maanedens{
     margin: 0 20px 20px 20px;
@@ -84,6 +110,7 @@ header, video{
     border-radius: 15px;
     padding: 10px;
     border: 0px;
+    margin-left: 170px;
 }
 
 
@@ -98,7 +125,7 @@ header, video{
 }
 
 
-#maanedens, .text{
+#maanedens .text{
     display: flex;
     justify-content: center;
     padding: 30px;
@@ -122,18 +149,19 @@ header, video{
 
 .linje{
     border-top: 4px solid var(--roed);
-    width: 70%;
+    width: 90%;
     z-index: 1;
-    margin-top: 50px;
-    margin-left: -60px;
+    margin-top: 80px;
+    margin-left: -190px;
 }
 
 
 #billede{
     display: block;
-    min-width: 25%;
+    min-width: 20%;
     max-width: 100%;
     margin-right: 10%;
+    margin-left: 10%;
 }
 
 
@@ -192,6 +220,7 @@ header, video{
 .daaser p{
     color: var(--beige);
     font-size: 40px;
+    font-family: var(--denlille);
 }
 
 
