@@ -19,6 +19,31 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
+    position: relative;
+    display: flex;
+    align-items: flex-start; 
+    padding: 20px;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.navlist {
+    display: flex;
+    list-style: none;
+}
+
+.filter {
+    position: absolute;
+    top: 90px;
+    right: 20px;
 }
 
 body{
@@ -69,7 +94,7 @@ body{
     z-index: 1;
     position: absolute;
     right: 0;
-    top: 170%;
+    top: 173%;
     transform: translateY(-50%);
 }
 
