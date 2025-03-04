@@ -164,7 +164,7 @@ body{
 .vision img {
     height: 600px;
     width: auto;
-    align-self: flex-end; /* Moves the image to the bottom */
+    align-self: flex-end;
 }
 
 
@@ -181,6 +181,7 @@ body{
     font-family: var(--denstore);
     color: var(--moerkblaa);
     font-size: 3vw;
+    padding-top: 60px;
 }
 
 .veardier p{
@@ -228,6 +229,6 @@ body{
     width: 30%;
     position: absolute;
     left: 0;
-    bottom: -1655px;
+    bottom: -237%;
 }
 
