@@ -58,17 +58,20 @@ body {
     background: linear-gradient(-195deg, #FCF2E5 50%, #C34C27 50%);
 }
 
-.nyheder{
-    color: var(--groen);
+/* ----NYHEDS SEKTION---- */
+.nyheder-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrerer indholdet */
+    text-align: center;
     font-size: 3vw;
     font-family: var(--denstore);
+    color: var(--groen);
 }
 
-.linje{
+.linje {
     border-top: 4px solid var(--groen);
     width: 21%;
-    z-index: 1;
-    margin-left: 565px;
     margin-top: 5px;
 }
 
@@ -370,11 +373,17 @@ body {
 }
 
 .maanedens-oel-container img {
-    width: 260px; /* Juster størrelsen på billedet */
+    width: 260px; 
     height: auto;
-    transform: scale(1.05); /* Forstørrer artiklen lidt */
+    transform: scale(1.05); /* Standard størrelse */
     margin-left: 30px;
+    transition: transform 0.3s ease-in-out; /* Glidende overgang */
 }
+
+.maanedens-oel-container img:hover {
+    transform: scale(1.2); /* Zoomer ind ved hover */
+}
+
 
 .maanedens-oel-container button {
     background-color: var(--groen);
