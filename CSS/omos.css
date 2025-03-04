@@ -18,6 +18,10 @@
     padding: 0;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 /*header redigering*/
 header {
     background-image: linear-gradient(to bottom, var(--moerkblaa) 0%, rgba(5, 3, 0, 0) 50%, rgba(24, 58, 55, 0) 100%), url("../IMG/omoshero.webp");
@@ -27,6 +31,7 @@ header {
     position: relative;
     display: flex;
     align-items: flex-start;
+    position: relative;
 }
 
 
@@ -54,6 +59,31 @@ header {
 
 body{
     background-color: var(--beige);
+}
+
+/*pil redigering*/
+@keyframes pil{
+    from{
+        top: 80%;
+    }
+    to{
+        top: 112%;
+    }
+}
+
+.pil {
+    position: absolute;
+    z-index: 2;
+    font-size: 100px;
+    color: var(--beige);
+    text-align: center;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* Center the arrow */
+    animation-name: pil;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    opacity: 70%;
 }
 
 /*Breadcrumbs redigering*/
