@@ -131,7 +131,7 @@ header .pil{
 #maanedens .text{
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 30px 30px 30px 70px;
 }
 
 
@@ -161,8 +161,7 @@ header .pil{
 /*Billede styling*/
 #billede{
     display: block;
-    min-width: 20%;
-    max-width: 100%;
+    width: 500px;
     margin-right: 10%;
     margin-left: 10%;
 }
@@ -217,6 +216,9 @@ header .pil{
     padding: 0 100px 50px 100px;
 }
 
+.daaser img{
+    width: 250px;
+}
 .daaser img:hover{
     transform: scale(1.05);
 }

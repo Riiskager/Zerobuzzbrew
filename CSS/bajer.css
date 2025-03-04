@@ -87,9 +87,15 @@ body{
 /*Styling på billede*/
 .bajeren{
     display: flex;
-    justify-content: space-between;
-    padding: 60px 250px;
+    padding: 60px 150px;
 }
+
+.bajs{
+    max-width: 400px;
+    padding-right: 100px;
+    
+}
+
 /*Styling på teksten i helhed*/
 .dethele{
     display: block;
@@ -168,7 +174,7 @@ body{
 }
 
 .anbefalinger img{
-    width: 150px;
+    width: 200px;
     margin-top: 50px;
 }
 .anbefalinger img:hover{
