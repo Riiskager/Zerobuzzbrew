@@ -116,7 +116,7 @@ header, video{
     display: flex;
     justify-content: center;
     text-decoration: none;
-    color: var(--roed) !important;
+    color: var(--roed);
 }
 
 
@@ -185,8 +185,11 @@ header, video{
     padding: 0 100px 50px 100px;
 }
 
+.daaser img:hover{
+    transform: scale(1.05);
+}
 
-.daaser, p{
+.daaser p{
     color: var(--beige);
     font-size: 40px;
 }

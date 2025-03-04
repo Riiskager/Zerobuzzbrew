@@ -1,6 +1,6 @@
 const bajer =[
     {
-        navn: "Proteinøl", ingrediens: "protein", tags: ["mørk"]
+        navn: "Proteinøl", ingrediens: "protein", tags: ["mørk", "pilsner"]
     },
     {
         navn: "Kold røg", ingrediens: "Røget egetræ", tags: ["mørk"]
@@ -54,3 +54,5 @@ const userTags = ["mørk", "pilsner"];
 const recommendedBeers = findBeersByTags(userTags);
 
 console.log("Anbefalede øl:", recommendedBeers);
+
+
