@@ -25,20 +25,19 @@
     margin-bottom: -30px;
     color: var(--beige);
 }
-.donde, a{
+.donde a{
     text-decoration: none;
-    color: var(--hvid);
+    color: var(--beige);
 }
 .donde a:hover{
     text-decoration: underline;
 }
 .protein{
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
-.navlist, a{
-    font-family: var(--denstore);
-    color: #183A37;
+.navlist a{
+    color: var(--orange);
 }
 
 h1{
@@ -103,32 +102,78 @@ body{
     font-size: 20px;
     padding: 10px 0 20px 0;
 }
-.knapper, #antal{
+.knapper{
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.knapper #antal{
     color: var(--orange);
     background: none;
     border-radius: 15px;
-    border-color: var(--orange);
+    border: 4px solid var(--beige);
     font-size: 20px;
     padding: 10px;
+    font-family: var(--denlille);
+    text-align: center;
 }
 #antal:hover{
     color: var(--hvid);
     background-color: var(--orange);
+    cursor: pointer;
 }
 
-
-.kurvknap{
+#antal:active{
     background-color: var(--orange);
+}
+.kurvknap{
+    background-color: var(--roed);
     color: var(--hvid);
     border-radius: 15px;
     border-color: var(--orange);
     font-size: 20px;
     padding: 10px;
+    border: none;
+}
+.kurvknap:hover{
+    background-color: var(--orange);
+    cursor: pointer;
 }
 
 
 .anbefalet{
     display: flex;
     justify-content: center;
-    font
+    font-size: xx-large;
+}
+.overskrift2{
+    padding-top: 10px;
+    color: var(--beige);
+}
+
+.underside{
+    background-color: var(--orange);
+    color: var(--beige);
+}
+
+.anbefalinger img{
+    width: 150px;
+    margin-top: 50px;
+}
+.anbefalinger img:hover{
+    transform: scale(1.1);
+}
+
+.anbefalinger{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    column-gap: 150px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+#anb{
+    display:block;
+    align-items: center;
+    font-size: x-large;
+    justify-content: center;
 }
