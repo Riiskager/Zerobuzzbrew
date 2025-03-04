@@ -13,6 +13,11 @@
     --denstore: "noka", sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /*header redigering*/
 header {
     background-image: url("../IMG/omoshero.webp");
@@ -21,14 +26,13 @@ header {
     height: 800px;
     position: relative;
     display: flex;
-    align-items: flex-start; 
-    padding: 20px;
+    align-items: flex-start;
 }
 
 .navbar {
     position: absolute;
     top: 20px;
-    left: 40%;
+    left: 38%;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-evenly;
@@ -38,6 +42,7 @@ header {
 .navlist {
     display: flex;
     list-style: none;
+    padding-left: 2%;
 }
 
 .filter {
@@ -59,6 +64,7 @@ body{
     padding-left: 3vw;
     align-items: center;
     margin-bottom: -30px;
+    padding-top: 10px;
 }
 
 .Forside {
@@ -83,8 +89,8 @@ body{
     border-top: 4px solid var(--roed);
     width: 30%;
     z-index: 1;
-    padding-top: -100px;
-    margin-top: 40px;
+    padding-top: -110px;
+    margin-top: 50px;
     margin-bottom: -80px;
 }
 
@@ -94,7 +100,7 @@ body{
     z-index: 1;
     position: absolute;
     right: 0;
-    top: 173%;
+    top: 162%;
     transform: translateY(-50%);
 }
 
@@ -107,7 +113,7 @@ body{
     text-align: center;
     color: var(--roed);
     font-size: 3vw;
-    padding-top : 30px;
+    padding-top : 70px;
 }
 
 .mission p{
@@ -221,6 +227,6 @@ body{
     width: 30%;
     position: absolute;
     left: 0;
-    bottom: -1100px;
+    bottom: -1655px;
 }
 
