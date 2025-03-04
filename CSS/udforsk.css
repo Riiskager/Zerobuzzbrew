@@ -75,16 +75,12 @@ body {
     margin-top: 5px;
 }
 
-/* ----SHOPPINGCART SEKTION---- */
-.carousel-item {
-    position: relative; /* Gør det muligt at placere ikonet korrekt */
-}
-
+/* ----SHOPPINGCART ORANGE SEKTION---- */
 .shopping-cart-icon {
     position: absolute;
-    top: -10px;
-    margin-left: 50px;
-    z-index: 1000; /* Sørger for, at ikonet ikke forsvinder bag billedet */
+    top: 10px;
+    margin-left: 250px;
+    z-index: 10; /* Sørger for, at ikonet ikke forsvinder bag billedet */
 }
 
 .shopping-cart-icon img {
@@ -94,6 +90,25 @@ body {
 }
 
 .shopping-cart-icon:hover {
+    transform: scale(1.1); /* Gør ikonet lidt større */
+    transition: 0.3s ease-in-out;
+}
+
+/* ----SHOPPINGCART HVID SEKTION---- */
+.shopping-cart-icon1 {
+    position: absolute;
+    top: 10px;
+    margin-left: 250px;
+    z-index: 10; /* Sørger for, at ikonet ikke forsvinder bag billedet */
+}
+
+.shopping-cart-icon1 img {
+    width: 100px;
+    height: 100px;
+    pointer-events: none; /* Forhindrer klik-interferens */
+}
+
+.shopping-cart-icon1:hover {
     transform: scale(1.1); /* Gør ikonet lidt større */
     transition: 0.3s ease-in-out;
 }
