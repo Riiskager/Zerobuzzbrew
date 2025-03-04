@@ -74,7 +74,7 @@
     
     .categories li {
         display: inline-block; /* Gør dem på linje */
-        margin: 30px; /* Justér afstand i siden*/
+        margin: 20px 30px 50px 30px; /* Top, højre, bund, venstre */
         position: relative;
     }
     
@@ -118,27 +118,28 @@
 
 /* Individuel styling */
 .ikon-filter {
-    width: 30px; /* Gør ikonet mindre */
+    width: 30px; 
     cursor: pointer;
     position: absolute; /* Eller 'fixed' hvis det skal følge med ved scroll */
     left: 10px; /* Rykker det lidt væk fra venstre kant */
     top: 500px; /* Justér for at placere det længere nede */
 }
 
-
-
-
-
 .ikon-kurv {
-    width: 35px;
+    width: 30px;
     cursor: pointer;
+    position: absolute;
+    right: 10px; /* Holder den i højre side */
+    top: 500px; /* Rykker den længere ned */
 }
 
-.ikon-søg {
-    width: 28px;
+.ikon-search {
+    width: 30px;
     cursor: pointer;
+    position: absolute;
+    right: 50px; /* Placeres ved siden af kurven */
+    top: 500px; /* Matcher kurvens højde */
 }
-
 
 
 
