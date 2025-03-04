@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-:root{
+:root{ /*pallette plus fonts*/
     --groen: #616D38;
     --lysgroen: #B79F39;
     --roed: #C34C27;
@@ -15,7 +15,8 @@
 --denlille: "serenity", sans-serif;
 --denstore: "noka", sans-serif;
 }
-.donde{
+/*Brødkrummer*/
+.donde{ 
     display: flex;
     font-family: var(--denlille);
     font-size: 1.2vw;
@@ -33,13 +34,16 @@
     text-decoration: underline;
 }
 .protein{
-    text-decoration: underline !important;
+    text-decoration: underline !important; /*Den var stædig, jeg var stædigere*/
 }
 
+/*Forsøg på at rette header til, da den ikke stemte over ens med det*/
 .navlist a{
     color: var(--orange);
+    font-family: var(--denstore) !important; /*Den kamp tabte jeg*/
 }
 
+/*font styling*/
 h1{
     font-family: var(--denstore);
 }
@@ -50,7 +54,12 @@ body{
     background-color: var(--hvid);
 }
 
+/*Fjerner scrollbar*/
+::-webkit-scrollbar{
+    display: none;
+}
 
+/*2. header styling*/
 .header2{
     display: flex;
     justify-content: space-between;
@@ -75,11 +84,13 @@ body{
     margin-top: 5px;
 }
 
+/*Styling på billede*/
 .bajeren{
     display: flex;
     justify-content: space-between;
     padding: 60px 250px;
 }
+/*Styling på teksten i helhed*/
 .dethele{
     display: block;
     color: var(--orange);
@@ -102,6 +113,7 @@ body{
     font-size: 20px;
     padding: 10px 0 20px 0;
 }
+/*Knappers styling*/
 .knapper{
     gap: 10px;
     margin-bottom: 10px;
@@ -139,7 +151,7 @@ body{
     cursor: pointer;
 }
 
-
+/*Anbefaling styling*/
 .anbefalet{
     display: flex;
     justify-content: center;
@@ -163,6 +175,7 @@ body{
     transform: scale(1.1);
 }
 
+/*Opsætning til grid*/
 .anbefalinger{
     display: grid;
     grid-template-columns: auto auto auto auto;
