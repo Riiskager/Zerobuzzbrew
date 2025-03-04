@@ -60,7 +60,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-bottom: -170px;
+        margin-bottom: -250px;
+    
     }
 
   
@@ -94,11 +95,19 @@
         font-size: 2.5vw; 
         font-family: var(--denstore);
         position: relative;
+        display: inline-block; /* Sørger for, at padding virker korrekt */
+     
+        display: inline-block;
+    transform: translateY(60px); /* Justér værdien efter behov */
+   
+        }
+        
+        
       
       
       
       
-    }
+    
     
 
 /* Understregningseffekt */
@@ -162,6 +171,7 @@
 .mestpopulaere h2{
     color: var(--beige);
     margin-top: 50px;
+    
     font-size: 3vw;
     font-family: var(--denstore);
     margin-bottom: 30px;
