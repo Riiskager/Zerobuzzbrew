@@ -18,6 +18,7 @@ header {
     background-image: url("../IMG/omoshero.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 800px;
 }
 
 body{
@@ -68,7 +69,7 @@ body{
     z-index: 1;
     position: absolute;
     right: 0;
-    top: 80%;
+    top: 170%;
     transform: translateY(-50%);
 }
 
@@ -123,7 +124,7 @@ body{
     color: var(--hvid);
     font-family: var(--denlille);
     font-size: 1.5vw;
-    text-align: center;
+    text-align:center;
     margin-top: 10px;
     padding-left: 5%;
 }
