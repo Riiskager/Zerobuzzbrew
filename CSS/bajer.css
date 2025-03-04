@@ -15,6 +15,26 @@
 --denlille: "serenity", sans-serif;
 --denstore: "noka", sans-serif;
 }
+.donde{
+    display: flex;
+    font-family: var(--denlille);
+    font-size: 1.2vw;
+    padding: 1vw 3vw;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: -30px;
+    color: var(--beige);
+}
+.donde, a{
+    text-decoration: none;
+    color: var(--hvid);
+}
+.donde a:hover{
+    text-decoration: underline;
+}
+.protein{
+    text-decoration: underline;
+}
 
 .navlist, a{
     font-family: var(--denstore);
@@ -31,6 +51,7 @@ body{
     background-color: var(--hvid);
 }
 
+
 .header2{
     display: flex;
     justify-content: space-between;
@@ -43,9 +64,11 @@ body{
 
 .header2 h1:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 #ikon:hover{
     transform: scale(1.12);
+    cursor: pointer;
 }
 
 #ikon{
