@@ -101,7 +101,7 @@ body{
     z-index: 1;
     position: absolute;
     right: 0;
-    top: 162%;
+    margin-top: -3%;
     transform: translateY(-50%);
 }
 
@@ -229,6 +229,5 @@ body{
     width: 30%;
     position: absolute;
     left: 0;
-    bottom: -237%;
+    margin-top: 7%;
 }
-
