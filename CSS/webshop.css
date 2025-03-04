@@ -107,6 +107,42 @@
     transform: scaleX(1);
 }
 
+
+/* Ikoner */
+.ikoner {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+/* Individuel styling */
+.ikon-filter {
+    width: 30px; /* Gør ikonet mindre */
+    cursor: pointer;
+    position: absolute; /* Eller 'fixed' hvis det skal følge med ved scroll */
+    left: 10px; /* Rykker det lidt væk fra venstre kant */
+    top: 500px; /* Justér for at placere det længere nede */
+}
+
+
+
+
+
+.ikon-kurv {
+    width: 35px;
+    cursor: pointer;
+}
+
+.ikon-søg {
+    width: 28px;
+    cursor: pointer;
+}
+
+
+
+
+
 /*produkt sektion*/
 
 .mestpopulaere h2{
@@ -413,3 +449,4 @@
         transform: translateX(-50%); /* Halvdelen af teksten forsvinder, men den er duplikeret */
     }
 }
+
