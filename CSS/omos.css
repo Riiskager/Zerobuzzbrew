@@ -13,9 +13,14 @@
     --denstore: "noka", sans-serif;
 }
 
+/*Genrelt*/
 * {
     margin: 0;
     padding: 0;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 /*header redigering*/
@@ -27,6 +32,7 @@ header {
     position: relative;
     display: flex;
     align-items: flex-start;
+    position: relative;
 }
 
 
@@ -54,6 +60,31 @@ header {
 
 body{
     background-color: var(--beige);
+}
+
+/*pil redigering*/
+@keyframes pil{
+    from{
+        top: 80%;
+    }
+    to{
+        top: 112%;
+    }
+}
+
+.pil {
+    position: absolute;
+    z-index: 2;
+    font-size: 100px;
+    color: var(--beige);
+    text-align: center;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* Center the arrow */
+    animation-name: pil;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    opacity: 70%;
 }
 
 /*Breadcrumbs redigering*/
@@ -209,6 +240,7 @@ body{
     width: 200px;
     height: auto;
     padding-top: 60px;
+    padding-bottom: 20px;
 }
 
 .oeltekst p{
