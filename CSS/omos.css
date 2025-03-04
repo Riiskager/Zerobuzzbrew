@@ -83,6 +83,8 @@ body{
 .omos{
     text-decoration: underline;
     padding-left: 5px;
+    font-size: 20px;
+    font-weight: 100;
 }
 
 /*Sektion 1 redigering*/
@@ -90,7 +92,6 @@ body{
     border-top: 4px solid var(--roed);
     width: 30%;
     z-index: 1;
-    padding-top: -110px;
     margin-top: 50px;
     margin-bottom: -80px;
 }
