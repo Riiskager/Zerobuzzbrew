@@ -167,68 +167,169 @@ header .pil{
     margin-left: 10%;
 }
 
-/*Banner styling*/
+/*TILBUDSBANNER SEKTION*/
+.tilbud-section {
+    padding: 0px;
+    overflow: hidden;
+    border-bottom: 4px solid var(--beige);
+   border-top: 4px solid var(--beige);
+}
+
 .banner {
     background-color: var(--lysblaa);
     color: var(--hvid);
-    font-family: var(--denlille);
+    font-family: var(--denstore);
     font-size: xx-large;
-    padding: 20px 0;
-    overflow: hidden;
+    padding: 30px 0;
     white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.banner-content {
+    display: flex;
+    gap: 30px; /* Justerer afstanden mellem elementer */
+    min-width: 200%; /* Sørger for at dække hele skærmen to gange */
+    animation: scrollText 15s linear infinite;
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%); /* Halvdelen af teksten forsvinder, men den er duplikeret */
+    }
+}
+
+ /* Nyheder sektion */
+ .ipa-oversigt h2 {
+    color: var(--beige);
+    margin-top: 50px;
+    font-size: 3vw;
+    font-family: var(--denstore);
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: var(--roed);
+    margin: 0;
+    margin-bottom: -60px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    padding: 30px 0;
+    
+}
+
+.ipa-carousel-container {
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--roed);
+    border-bottom: 4px solid var(--beige);
+}
+
+.ipa-carousel-container p {
+    font-size: 2.5vw;
+    font-family: var(--denlille);
+    color: var(--beige);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ipa-carousel {
+    display: flex;
+    width: max-content;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+        /* Skjuler scrollbar på forskellige browsere */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer & Edge */
+    }
+    
+    .carouselscrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+    
+
+
+.ipa-carousel-item {
+    flex: 0 0 auto;
+    width: 33.33%; /* Viser 3 billeder ad gangen */
+    padding: 10px; /* Afstand mellem billeder */
+    box-sizing: border-box;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     position: relative;
 }
 
-/*Animation af banner, hedder marquee fordi det er en forældet version som man ikke bruger mere :/ */
-.marquee {
-    display: flex;
-    gap: 100px; /* Spacing mellem elementerne */
-    animation: marquee 40s linear infinite;
-    width: max-content;
-    font-family: var(--denstore);
+.ipa-carousel-item img {
+    width: 55%;
+    height: auto;
 }
 
-
-@keyframes marquee {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-/*Nyheder styling*/
-.udvalg{
-    background-color: var(--orange);
-}
-
-
-.udvalg h1{
-    padding: 50px;
-    color: var(--beige);
-    font-size: 50px;
-}
-
-
-.daaser{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 100px 50px 100px;
-}
-
-.daaser img{
-    width: 250px;
-}
-.daaser img:hover{
+.ipa-carousel-item:hover {
     transform: scale(1.05);
 }
 
-.daaser p{
-    color: var(--beige);
-    font-size: 40px;
-    font-family: var(--denlille);
+.ipa-carousel-item:hover img {
+    transform: scale(1);
 }
+
+/* Pile-knapper */
+.ipa-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 48px;
+    cursor: pointer;
+    color: var(--beige);
+    background: none;
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
+
+.ipa-arrow:hover {
+    color: var(--orange);
+}
+
+/* Justér pilenes placering */
+#prev-ipa {
+    left: 10px;
+}
+
+#next-ipa {
+    right: 10px;
+}
+
+/* PRIS SEKTION*/
+.pris {
+    display: inline-block; 
+    position: relative; 
+    margin-bottom: 40px;
+}
+
+.pris::after {
+    content: ""; /* Opretter en pseudo-element til linjen */
+    position: absolute;
+    left: -20px;
+    bottom: -8px; 
+    width: 70px; 
+    height: 2px; 
+    background-color: var(--beige)
+}
+   
+
 
 
 /*Originale header, store problemer uden ekstra redigering*/
@@ -238,6 +339,7 @@ header .pil{
     align-items: center;
     gap: 150px;
     padding: 10px 20px;
+    border-top: 4px solid var(--beige);
 }
 
 .navbar{
