@@ -68,10 +68,23 @@ body{
     color: var(--orange);
     font-family: var(--denlille);
     font-size: 1rem;
+    
 }
 
+
+.header2 a {
+    text-decoration: none; 
+    color: var(--orange);
+}
+
+.header2 a:hover {
+    text-decoration: underline; 
+    cursor: pointer; 
+}
+
+
 .header2 a:visited {
-    color: var(--orange); /* Sikrer, at besøgte links forbliver samme farve */
+    color: var(--orange); 
 }
 
 .header2 h1:hover{
