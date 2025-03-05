@@ -74,12 +74,12 @@ body{
     text-decoration: underline;
     cursor: pointer;
 }
-#ikon:hover{
+#ikoner:hover{
     transform: scale(1.12);
     cursor: pointer;
 }
 
-#ikon{
+#ikoner{
     font-size: 25px;
     margin-top: 5px;
 }
