@@ -66,6 +66,7 @@
         align-items: center;
         justify-content: center;
         margin-bottom: -250px;
+        border-bottom: 4px solid var(--hvid);
     }
 
   
@@ -108,14 +109,6 @@
    
         }
         
-        
-      
-      
-      
-      
-    
-    
-
 /* Understregningseffekt */
 .categories li a::after {
     content: "";
@@ -150,7 +143,7 @@
     cursor: pointer;
     position: absolute; /* Eller 'fixed' hvis det skal følge med ved scroll */
     left: 10px; /* Rykker det lidt væk fra venstre kant */
-    top: 760px; /* Justér for at placere det længere nede */
+    top: 740px; /* Justér for at placere det længere nede */
 }
 
 .ikon-kurv {
@@ -158,7 +151,7 @@
     cursor: pointer;
     position: absolute;
     right: 10px; /* Holder den i højre side */
-    top: 760px; /* Rykker den længere ned */
+    top: 740px; /* Rykker den længere ned */
 }
 
 .ikon-search {
@@ -166,7 +159,7 @@
     cursor: pointer;
     position: absolute;
     right: 50px; /* Placeres ved siden af kurven */
-    top: 760px; /* Matcher kurvens højde */
+    top: 740px; /* Matcher kurvens højde */
 }
 
 
@@ -186,7 +179,7 @@
     margin-bottom: -40px;
     padding: 50px 0;
     text-decoration: underline;
-    text-underline-offset: 10px; 
+    text-underline-offset: 10px;
 }
 
 .carousel-container {
@@ -208,6 +201,19 @@
     margin-top: 10px;
 }
 
+/* ----SHOPPINGCART SEKTION---- */
+.shopping-cart-icon {
+    position: absolute;
+    top: 10px;
+    margin-left: 150px;
+    z-index: 10; /* Sørger for, at ikonet ikke forsvinder bag billedet */
+    width: 60px ;
+}
+
+.shopping-cart-icon:hover {
+    transform: scale(1.1); /* Gør ikonet lidt større */
+    transition: 0.3s ease-in-out;
+}
 
 /* PRIS SEKTION*/
 .pris {
@@ -256,6 +262,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    position: relative;
   
 }
 
@@ -411,6 +418,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    position: relative;
 }
 
 .ipa-carousel-item img {
