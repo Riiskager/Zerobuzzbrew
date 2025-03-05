@@ -1,3 +1,4 @@
+// Importering fra Json fil fungerede ikke
 const bajer =[
     {
         navn: "Proteinøl", ingrediens: "protein", tags: ["mørk", "pilsner"]
@@ -43,6 +44,7 @@ const bajer =[
     }
 ]
 
+//Kig i konsollen, det virker!
 function findBeersByTags(preferredTags) {
     return bajer.filter(bajer =>
         bajer.tags.some(tag => preferredTags.includes(tag))

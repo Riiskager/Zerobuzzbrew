@@ -50,32 +50,43 @@
     
     
 /*Store billede øverst*/
-    .hero {
+    .hero-content {
         position: relative;
         width: 100vw;
-        height: 550px; 
+        height: 600px; 
         background: linear-gradient(165deg, #FCF2E5 50%, #B79F39 50%);
 
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-bottom: -50px;
+        margin-bottom: -250px;
     }
+
+  
+    
+    .hero-content img.hero-image {
+        max-width: 400px;
+        height: auto;
+        display: block;
+    }
+    
 
 
     .categories ul {
         padding: 0;
         margin: 0;
         text-align: center; 
-        
+        margin-top: 60px;
         
     }
     
     .categories li {
         display: inline-block; /* Gør dem på linje */
-        margin: 20px 30px 50px 30px; /* Top, højre, bund, venstre */
+        margin: 20px 30px 30px; /* Top, højre, bund, venstre */
         position: relative;
+        margin-top: 50px;
+       
     }
     
     .categories li a {
@@ -84,8 +95,19 @@
         font-size: 2.5vw; 
         font-family: var(--denstore);
         position: relative;
-      padding-bottom: 5px;
-    }
+        display: inline-block; /* Sørger for, at padding virker korrekt */
+     
+        display: inline-block;
+    transform: translateY(60px); /* Justér værdien efter behov */
+   
+        }
+        
+        
+      
+      
+      
+      
+    
     
 
 /* Understregningseffekt */
@@ -122,7 +144,7 @@
     cursor: pointer;
     position: absolute; /* Eller 'fixed' hvis det skal følge med ved scroll */
     left: 10px; /* Rykker det lidt væk fra venstre kant */
-    top: 500px; /* Justér for at placere det længere nede */
+    top: 760px; /* Justér for at placere det længere nede */
 }
 
 .ikon-kurv {
@@ -130,7 +152,7 @@
     cursor: pointer;
     position: absolute;
     right: 10px; /* Holder den i højre side */
-    top: 500px; /* Rykker den længere ned */
+    top: 760px; /* Rykker den længere ned */
 }
 
 .ikon-search {
@@ -138,7 +160,7 @@
     cursor: pointer;
     position: absolute;
     right: 50px; /* Placeres ved siden af kurven */
-    top: 500px; /* Matcher kurvens højde */
+    top: 760px; /* Matcher kurvens højde */
 }
 
 
@@ -149,6 +171,7 @@
 .mestpopulaere h2{
     color: var(--beige);
     margin-top: 50px;
+    
     font-size: 3vw;
     font-family: var(--denstore);
     margin-bottom: 30px;
@@ -157,13 +180,12 @@
     margin-bottom: -40px;
     padding: 50px 0;
     text-decoration: underline;
-    text-underline-offset: 10px;
+    text-underline-offset: 10px; 
 }
 
 .carousel-container {
     
-    margin-top: 0px;
-   
+    margin-top: 20px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -172,6 +194,7 @@
     align-items: center;
     background-color: var(--lysblaa);
     
+    
    
 }
 
@@ -179,6 +202,7 @@
     font-size: 2.5vw;
     font-family: var(--denlille);
     color: var(--beige);
+    margin-top: 10px;
     
 }
 
@@ -228,6 +252,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  
 }
 
 .carousel-item img {
@@ -286,6 +312,7 @@
     padding: 0px;
     overflow: hidden;
     border-bottom: 4px solid var(--hvid);
+   border-top: 4px solid var(--hvid);
 }
 
 .banner {
@@ -349,6 +376,8 @@
     font-size: 2.5vw;
     font-family: var(--denlille);
     color: var(--beige);
+    text-align: center;
+    margin-top: 10px;
 }
 
 .ipa-carousel {
@@ -378,6 +407,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .ipa-carousel-item img {
@@ -428,6 +458,7 @@
     padding: 0px;
     overflow: hidden;
     border-bottom: 4px solid var(--hvid);
+    border-top: 4px solid var(--hvid);;
 }
 
 .sammenhold {

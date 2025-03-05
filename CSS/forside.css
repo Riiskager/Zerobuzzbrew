@@ -1,9 +1,10 @@
+/*Mange ting kommer til at gå igen her, da f.eks hvide kanter bliver fjernet, og kommer igen, for så at blive fjernet, komme igen osv osv.*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*Paletter*/
 :root{
     --groen: #616D38;
     --lysgroen: #B79F39;
@@ -35,7 +36,7 @@ html, body{
     display: none;
 }
 
-
+/*body styling*/
 body{
     background-color: var(--hvid);
 }
@@ -47,7 +48,7 @@ body h1{
     padding-bottom: 20px;
 }
 
-
+/*Månedens øl tekst styling*/
 #maanedens p{
     font-family: var(--denlille);
     color: var(--roed);
@@ -56,7 +57,7 @@ body h1{
     max-width: 500px;
 }
 
-
+/*Header styling til video*/
 header{
     width: 100%;
     display: flex;
@@ -69,6 +70,7 @@ header video{
     width: 100%;
     position: relative;
 }
+/*Styling af guidende pil*/
 header .pil{
     align-self: center;
     top: 100%;
@@ -94,6 +96,7 @@ header .pil{
     color: var(--beige);
 }
 
+/*Styling af månedens øl section*/
 #maanedens{
     margin: 0 20px 20px 20px;
     display: flex;
@@ -111,6 +114,7 @@ header .pil{
     padding: 10px;
     border: 0px;
     margin-left: 170px;
+    text-decoration: none;
 }
 
 
@@ -128,7 +132,7 @@ header .pil{
 #maanedens .text{
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 30px 30px 30px 70px;
 }
 
 
@@ -139,14 +143,14 @@ header .pil{
 }
 
 
-#maanedens, p{
+#maanedens, p{ /*Komma ikke nødvendigt, opdaget sent i processen, tør ikke ændre*/
     display: flex;
     justify-content: center;
     text-decoration: none;
     color: var(--roed);
 }
 
-
+/*Linje styling*/
 .linje{
     border-top: 4px solid var(--roed);
     width: 90%;
@@ -155,16 +159,15 @@ header .pil{
     margin-left: -190px;
 }
 
-
+/*Billede styling*/
 #billede{
     display: block;
-    min-width: 20%;
-    max-width: 100%;
+    width: 500px;
     margin-right: 10%;
     margin-left: 10%;
 }
 
-
+/*Banner styling*/
 .banner {
     background-color: var(--lysblaa);
     color: var(--hvid);
@@ -176,12 +179,13 @@ header .pil{
     position: relative;
 }
 
-
+/*Animation af banner, hedder marquee fordi det er en forældet version som man ikke bruger mere :/ */
 .marquee {
     display: flex;
     gap: 100px; /* Spacing mellem elementerne */
-    animation: marquee 30s linear infinite;
+    animation: marquee 40s linear infinite;
     width: max-content;
+    font-family: var(--denstore);
 }
 
 
@@ -194,7 +198,7 @@ header .pil{
     }
 }
 
-
+/*Nyheder styling*/
 .udvalg{
     background-color: var(--orange);
 }
@@ -213,6 +217,9 @@ header .pil{
     padding: 0 100px 50px 100px;
 }
 
+.daaser img{
+    width: 250px;
+}
 .daaser img:hover{
     transform: scale(1.05);
 }
