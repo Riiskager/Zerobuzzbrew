@@ -179,6 +179,7 @@ body{
     display: flex;
     justify-content: center;
     font-size: xx-large;
+    border-top: 4px solid var(--beige);
 }
 .overskrift2{
     padding-top: 10px;
@@ -206,6 +207,7 @@ body{
     column-gap: 150px;
     padding-bottom: 50px;
     text-align: center;
+    border-bottom: 4px solid var(--beige);
 }
 #anb{
     display:block;
