@@ -199,9 +199,6 @@
     justify-content: center;
     align-items: center;
     background-color: var(--lysblaa);
-    
-    
-   
 }
 
 .carousel-container p{
@@ -209,7 +206,6 @@
     font-family: var(--denlille);
     color: var(--beige);
     margin-top: 10px;
-    
 }
 
 
@@ -217,6 +213,7 @@
 .pris {
     display: inline-block; 
     position: relative; 
+    margin-bottom: 30px;
 }
 
 .pris::after {
