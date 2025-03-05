@@ -66,9 +66,10 @@
   
     
     .hero-content img.hero-image {
-        max-width: 400px;
+        max-width: 500px;
         height: auto;
         display: block;
+        margin-bottom: 100px;
     }
     
 
