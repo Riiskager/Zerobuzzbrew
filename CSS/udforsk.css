@@ -18,6 +18,10 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 body {
     font-family: var(--denlille);
     text-align: center;
@@ -81,12 +85,7 @@ body {
     top: 10px;
     margin-left: 250px;
     z-index: 10; /* Sørger for, at ikonet ikke forsvinder bag billedet */
-}
-
-.shopping-cart-icon img {
-    width: 40px;
-    height: auto;
-    pointer-events: none; /* Forhindrer klik-interferens */
+    width: 55px ;
 }
 
 .shopping-cart-icon:hover {
@@ -146,7 +145,7 @@ body {
 }
 
 .carousel-item img {
-    width: 55%;
+    width: 80%;
     height: auto;
     transition: transform 0.2s ease-in-out; /* Hurtigere overgang på billedzoom */
 }
@@ -259,7 +258,7 @@ body {
  display: none; /* Chrome, Safari, Opera */
 }
 
-.kasse-carousel-item {
+.kasse-carousel-item, .kasse-carousel-item1{
     flex: 0 0 auto;
     width: 33.33%; /* Vist 3 billeder ad gangen */
     padding: 10px; /* Afstand mellem billeder */
@@ -270,6 +269,15 @@ body {
     align-items: center;
     transition: transform 0.2s ease-in-out; /* Hurtigere overgang */
 }
+
+
+.kasse-carousel-item1 img {
+    width: 44%;
+    height: auto;
+    transition: transform 0.2s ease-in-out; /* Hurtigere overgang på billedzoom */
+}
+
+
 
 .kasse-carousel-item:hover {
     transform: scale(1.05); /* Forstørrer artiklen lidt */
