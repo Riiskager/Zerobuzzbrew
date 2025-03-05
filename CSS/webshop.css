@@ -89,7 +89,7 @@
     }
     
     .categories li {
-        display: inline-block; /* Gør dem på linje */
+        display: inline-block; 
         margin: 20px 30px 30px; /* Top, højre, bund, venstre */
         position: relative;
         margin-top: 50px;
@@ -102,10 +102,10 @@
         font-size: 2vw; 
         font-family: var(--denstore);
         position: relative;
-        display: inline-block; /* Sørger for, at padding virker korrekt */
+        display: inline-block; 
      
         display: inline-block;
-    transform: translateY(60px); /* Justér værdien efter behov */
+    transform: translateY(60px); 
    
         }
         
@@ -116,9 +116,9 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 2px; /* Tykkelse på stregen */
-    background-color: var(--roed); /* Farve på stregen */
-    transform: scaleX(0); /* Starter usynlig */
+    height: 2px; 
+    background-color: var(--roed); 
+    transform: scaleX(0); 
     transform-origin: center;
     transition: transform 0.3s ease-in-out;
 }
@@ -143,7 +143,7 @@
     cursor: pointer;
     position: absolute; /* Eller 'fixed' hvis det skal følge med ved scroll */
     left: 10px; /* Rykker det lidt væk fra venstre kant */
-    top: 740px; /* Justér for at placere det længere nede */
+    top: 740px; 
 }
 
 .ikon-kurv {

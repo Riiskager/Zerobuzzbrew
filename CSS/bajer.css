@@ -68,6 +68,23 @@ body{
     color: var(--orange);
     font-family: var(--denlille);
     font-size: 1rem;
+    
+}
+
+
+.header2 a {
+    text-decoration: none; 
+    color: var(--orange);
+}
+
+.header2 a:hover {
+    text-decoration: underline; 
+    cursor: pointer; 
+}
+
+
+.header2 a:visited {
+    color: var(--orange); 
 }
 
 .header2 h1:hover{
@@ -182,17 +199,69 @@ body{
 }
 
 /*Opsætning til grid*/
-.anbefalinger{
+.anbefalinger {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    width: 100%; /* Sikrer at grid'et tilpasses */
+    padding: 10px; /* Afstand mellem billeder */
+    grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
+    grid-template-rows: repeat(2, auto); /* 2 rækker */
     justify-content: center;
-    column-gap: 150px;
+    column-gap: 10px; /* Mindre afstand mellem kolonner */
+    row-gap: 20px; /* Afstand mellem rækker */
     padding-bottom: 50px;
     text-align: center;
+    align-items: center;
 }
+
 #anb{
     display:block;
     align-items: center;
     font-size: x-large;
     justify-content: center;
 }
+
+/* PRIS SEKTION*/
+.pris {
+    display: inline-block; 
+    position: relative; 
+    margin-bottom: 30px;
+}
+
+.pris::after {
+    content: ""; /* Opretter en pseudo-element til linjen */
+    position: absolute;
+    left: -25px;
+    bottom: -8px; 
+    width: 70px; 
+    height: 2px; 
+    background-color: var(--beige)
+}
+
+.underside {
+    position: relative;
+    padding: 20px;
+    border-bottom: 4px solid var(--beige);
+    border-top: 4px solid var(--beige);
+}
+
+.underside::before,
+.underside::after {
+    content: "";
+    position: absolute;
+    width: 4px; /* Bredden på linjerne */
+    background-color: var(--beige);
+}
+
+.underside::before {
+    left: 50px; /* Justér placeringen af venstre linje */
+    bottom: 0; /* Starter fra bunden */
+    height: 600px; /* Højde på linjen */
+}
+
+.underside::after {
+    right: 50px; /* Justér placeringen af højre linje */
+    top: 0; /* Starter fra toppen */
+    height: 600px; /* Højde på linjen */
+}
+
+
