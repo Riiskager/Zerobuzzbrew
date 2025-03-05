@@ -14,6 +14,11 @@
 --denstore: "noka", sans-serif;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -66,9 +71,10 @@
   
     
     .hero-content img.hero-image {
-        max-width: 400px;
+        max-width: 500px;
         height: auto;
         display: block;
+        margin-bottom: 100px;
     }
     
 
@@ -92,7 +98,7 @@
     .categories li a {
         color: var(--roed); 
         text-decoration: none;
-        font-size: 2.5vw; 
+        font-size: 2vw; 
         font-family: var(--denstore);
         position: relative;
         display: inline-block; /* Sørger for, at padding virker korrekt */
